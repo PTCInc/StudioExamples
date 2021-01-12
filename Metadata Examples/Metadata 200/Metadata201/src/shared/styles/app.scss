@@ -1,0 +1,37 @@
+/*
+   Add additional application styles or override styles provided by the selected theme or widgets.
+   You can include SASS syntax, as this file is built to a css file using a SASS processor.
+
+   Available Variables:
+
+   Variable Name      Description
+   ----------------------------------------------------
+   $resources         References the directory where resources reside (images, etc.), this directory may be different
+                      between the design time and the runtime directory structure.
+
+                      Example: background-image: url(#{$resources}/Uploaded/image.png)
+
+   $font-path        References the relative directory where fonts are stored.
+*/
+/*
+.popup-body {
+  //height: 135px !important;
+  opacity:0.5 !important; 
+  //width: 150px !important;
+  color: white;
+  background-color: rgba(143,21,104,1);
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.popup-head {
+  background-color: rgba(143,21,104,1) !important;
+  opacity:0.5 !important;
+}
+
+div.backdrop.visible.active {  
+  background-color:rgba(0,0,0,0) !important;
+}
+div.popover-backdrop.active {
+  background-color:rgba(0,0,0,0) !important;
+}*/
