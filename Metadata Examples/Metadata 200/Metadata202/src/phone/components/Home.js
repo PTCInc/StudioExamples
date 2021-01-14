@@ -11,7 +11,7 @@ $scope.$on('userpick', function (event, targetName, targetType, eventData) {
     
     // create variables based on attribute names from Creo Illustrate for this model. use metadata.get to obtain the data from the JSON properties for this occurrence.
     var partName = metadata.get(pathId, 'Display Name');
-    var instructionName = metadata.get(pathId, 'Illustration');
+    var instructionName = metadata.get(pathId, 'illustration');
     var partNumber = metadata.get(pathId, 'partNumber');
 
     // adds an ionic popup when a part is clicked. Show the part number and name of the selected object. &nbsp;</br> adds a line break between the two variables

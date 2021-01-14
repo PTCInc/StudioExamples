@@ -39,7 +39,7 @@
                     "widget-id": "quadcopter",
                     "widget-name": "quadcopter",
                     "is-widget-container": "true",
-                    "src": "Uploaded/quadcopter-sg_High.pvz",
+                    "src": "Uploaded/quadcopter.pvz",
                     "y": "0.04547261446714401"
                   },
                   "name": "twx-dt-model",

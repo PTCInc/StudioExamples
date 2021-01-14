@@ -89,3 +89,28 @@
 [2021-01-07T16:03:54.696Z] debug: [twx-studio:upgrade:Metadata202] buildApp
 [2021-01-07T16:03:54.811Z] debug: [twx-studio:upgrade:Metadata202] END buildApp
 [2021-01-07T16:03:54.811Z] debug: [twx-studio:upgrade:Metadata202] Build succeeded.
+[2021-01-14T17:54:39.902Z] debug: [twx-studio:upgrade:Metadata202] Begin upgrade of project
+[2021-01-14T17:54:39.903Z] info: [twx-studio:upgrade:Metadata202] Upgrading project
+[2021-01-14T17:54:39.905Z] debug: [twx-studio:upgrade:Metadata202] Make sure there are not any stale files lying around
+[2021-01-14T17:54:39.905Z] debug: [twx-studio:upgrade:Metadata202] Removing 
+[2021-01-14T17:54:39.910Z] debug: [twx-studio:upgrade:Metadata202] Removing 
+[2021-01-14T17:54:39.988Z] debug: [twx-studio:upgrade:Metadata202] Removing 
+[2021-01-14T17:54:40.011Z] debug: [twx-studio:upgrade:Metadata202] Removing 
+[2021-01-14T17:54:40.021Z] debug: [twx-studio:upgrade:Metadata202] Removing 
+[2021-01-14T17:54:40.024Z] debug: [twx-studio:upgrade:Metadata202] Copying /src/**/* to project, overwrite=false
+[2021-01-14T17:54:40.025Z] debug: [twx-studio:upgrade:Metadata202] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-01-14T17:54:40.070Z] debug: [twx-studio:upgrade:Metadata202] Copy of project files complete
+[2021-01-14T17:54:40.070Z] debug: [twx-studio:upgrade:Metadata202] Updating version to 
+[2021-01-14T17:54:40.070Z] debug: [twx-studio:upgrade:Metadata202] onupgrade sucessful, now build the project
+[2021-01-14T17:54:40.070Z] debug: [twx-studio:upgrade:Metadata202] BEGIN buildApp
+[2021-01-14T17:54:40.070Z] debug: [twx-studio:upgrade:Metadata202] write settings
+[2021-01-14T17:54:40.071Z] debug: [twx-studio:upgrade:Metadata202] copy runtime extensions
+[2021-01-14T17:54:40.215Z] debug: [twx-studio:upgrade:Metadata202] packageThemeSet
+[2021-01-14T17:54:40.832Z] debug: [twx-studio:upgrade:Metadata202] onBuild
+[2021-01-14T17:54:40.832Z] info: [twx-studio:upgrade:Metadata202] Building ves-ar-extension app:
+[2021-01-14T17:54:40.848Z] debug: [twx-studio:upgrade:Metadata202] pathDir
+[2021-01-14T17:54:40.848Z] debug: [twx-studio:upgrade:Metadata202] scaffoldDir
+[2021-01-14T17:54:40.848Z] debug: [twx-studio:upgrade:Metadata202] copySrc
+[2021-01-14T17:54:40.939Z] debug: [twx-studio:upgrade:Metadata202] buildApp
+[2021-01-14T17:54:41.101Z] debug: [twx-studio:upgrade:Metadata202] END buildApp
+[2021-01-14T17:54:41.101Z] debug: [twx-studio:upgrade:Metadata202] Build succeeded.

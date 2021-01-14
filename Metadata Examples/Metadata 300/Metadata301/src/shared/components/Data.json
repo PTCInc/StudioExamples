@@ -1,0 +1,124 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "partno",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "partno",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1605206407606",
+            "source-type": "ui",
+            "source-label": "Text Input",
+            "source-name": "userInput",
+            "source-item-type": "property",
+            "source-item-name": "text",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Home'].wdg['userInput']['text']",
+            "to-property": "app.params['partno']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "cartButton",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cartButton",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "cart",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cart",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "priceInfo",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "priceInfo",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemCount",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemCount",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemName",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemName",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemNumber",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemNumber",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    }
+  ],
+  "name": "twx-app-mdl"
+}

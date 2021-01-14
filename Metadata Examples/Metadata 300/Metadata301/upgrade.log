@@ -1,0 +1,115 @@
+[2020-11-04T19:39:43.294Z] debug: [twx-studio:upgrade:Metadata102] Begin upgrade of project
+[2020-11-04T19:39:43.295Z] info: [twx-studio:upgrade:Metadata102] Upgrading project
+[2020-11-04T19:39:43.318Z] debug: [twx-studio:upgrade:Metadata102] Make sure there are not any stale files lying around
+[2020-11-04T19:39:43.320Z] debug: [twx-studio:upgrade:Metadata102] Create .gitignore for project dir
+[2020-11-04T19:39:43.320Z] debug: [twx-studio:upgrade:Metadata102] Copying /src/**/* to project, overwrite=false
+[2020-11-04T19:39:43.321Z] debug: [twx-studio:upgrade:Metadata102] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2020-11-04T19:39:43.371Z] debug: [twx-studio:upgrade:Metadata102] Copy of project files complete
+[2020-11-04T19:39:43.371Z] debug: [twx-studio:upgrade:Metadata102] Updating version to 
+[2020-11-04T19:39:43.371Z] debug: [twx-studio:upgrade:Metadata102] onupgrade sucessful, now build the project
+[2020-11-04T19:39:43.371Z] debug: [twx-studio:upgrade:Metadata102] BEGIN buildApp
+[2020-11-04T19:39:43.371Z] debug: [twx-studio:upgrade:Metadata102] write settings
+[2020-11-04T19:39:43.372Z] debug: [twx-studio:upgrade:Metadata102] copy runtime extensions
+[2020-11-04T19:39:43.491Z] debug: [twx-studio:upgrade:Metadata102] packageThemeSet
+[2020-11-04T19:39:44.126Z] debug: [twx-studio:upgrade:Metadata102] onBuild
+[2020-11-04T19:39:44.126Z] info: [twx-studio:upgrade:Metadata102] Building ves-ar-extension app:
+[2020-11-04T19:39:44.213Z] debug: [twx-studio:upgrade:Metadata102] pathDir
+[2020-11-04T19:39:44.213Z] debug: [twx-studio:upgrade:Metadata102] scaffoldDir
+[2020-11-04T19:39:44.213Z] debug: [twx-studio:upgrade:Metadata102] copySrc
+[2020-11-04T19:39:44.324Z] debug: [twx-studio:upgrade:Metadata102] buildApp
+[2020-11-04T19:39:44.437Z] debug: [twx-studio:upgrade:Metadata102] END buildApp
+[2020-11-04T19:39:44.437Z] debug: [twx-studio:upgrade:Metadata102] Build succeeded.
+[2020-11-05T19:47:31.438Z] debug: [twx-studio:upgrade:Metadata102] Begin upgrade of project
+[2020-11-05T19:47:31.438Z] info: [twx-studio:upgrade:Metadata102] Upgrading project
+[2020-11-05T19:47:31.439Z] debug: [twx-studio:upgrade:Metadata102] Make sure there are not any stale files lying around
+[2020-11-05T19:47:31.439Z] debug: [twx-studio:upgrade:Metadata102] Removing 
+[2020-11-05T19:47:31.442Z] debug: [twx-studio:upgrade:Metadata102] Removing 
+[2020-11-05T19:47:31.511Z] debug: [twx-studio:upgrade:Metadata102] Removing 
+[2020-11-05T19:47:31.530Z] debug: [twx-studio:upgrade:Metadata102] Removing 
+[2020-11-05T19:47:31.542Z] debug: [twx-studio:upgrade:Metadata102] Removing 
+[2020-11-05T19:47:31.544Z] debug: [twx-studio:upgrade:Metadata102] Copying /src/**/* to project, overwrite=false
+[2020-11-05T19:47:31.545Z] debug: [twx-studio:upgrade:Metadata102] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2020-11-05T19:47:31.637Z] debug: [twx-studio:upgrade:Metadata102] Copy of project files complete
+[2020-11-05T19:47:31.637Z] debug: [twx-studio:upgrade:Metadata102] Updating version to 
+[2020-11-05T19:47:31.637Z] debug: [twx-studio:upgrade:Metadata102] onupgrade sucessful, now build the project
+[2020-11-05T19:47:31.637Z] debug: [twx-studio:upgrade:Metadata102] BEGIN buildApp
+[2020-11-05T19:47:31.637Z] debug: [twx-studio:upgrade:Metadata102] write settings
+[2020-11-05T19:47:31.638Z] debug: [twx-studio:upgrade:Metadata102] copy runtime extensions
+[2020-11-05T19:47:31.766Z] debug: [twx-studio:upgrade:Metadata102] packageThemeSet
+[2020-11-05T19:47:32.410Z] debug: [twx-studio:upgrade:Metadata102] onBuild
+[2020-11-05T19:47:32.411Z] info: [twx-studio:upgrade:Metadata102] Building ves-ar-extension app:
+[2020-11-05T19:47:32.419Z] debug: [twx-studio:upgrade:Metadata102] pathDir
+[2020-11-05T19:47:32.419Z] debug: [twx-studio:upgrade:Metadata102] scaffoldDir
+[2020-11-05T19:47:32.419Z] debug: [twx-studio:upgrade:Metadata102] copySrc
+[2020-11-05T19:47:32.519Z] debug: [twx-studio:upgrade:Metadata102] buildApp
+[2020-11-05T19:47:32.638Z] debug: [twx-studio:upgrade:Metadata102] END buildApp
+[2020-11-05T19:47:32.638Z] debug: [twx-studio:upgrade:Metadata102] Build succeeded.
+
+2020-12-02T21:49:08.803Z: Project "Metadata102" saved as new project "Metadata102-popup"[2020-12-02T21:49:10.363Z] debug: [twx-studio:upgrade:Metadata102-popup] Begin upgrade of project
+[2020-12-02T21:49:10.364Z] info: [twx-studio:upgrade:Metadata102-popup] Upgrading project
+[2020-12-02T21:49:10.396Z] debug: [twx-studio:upgrade:Metadata102-popup] Make sure there are not any stale files lying around
+[2020-12-02T21:49:10.397Z] debug: [twx-studio:upgrade:Metadata102-popup] Removing 
+[2020-12-02T21:49:10.409Z] debug: [twx-studio:upgrade:Metadata102-popup] Create .gitignore for project dir
+[2020-12-02T21:49:10.410Z] debug: [twx-studio:upgrade:Metadata102-popup] Copying /src/**/* to project, overwrite=false
+[2020-12-02T21:49:10.411Z] debug: [twx-studio:upgrade:Metadata102-popup] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2020-12-02T21:49:10.448Z] debug: [twx-studio:upgrade:Metadata102-popup] Copy of project files complete
+[2020-12-02T21:49:10.448Z] debug: [twx-studio:upgrade:Metadata102-popup] Updating version to 
+[2020-12-02T21:49:10.448Z] debug: [twx-studio:upgrade:Metadata102-popup] onupgrade sucessful, now build the project
+[2020-12-02T21:49:10.448Z] debug: [twx-studio:upgrade:Metadata102-popup] BEGIN buildApp
+[2020-12-02T21:49:10.448Z] debug: [twx-studio:upgrade:Metadata102-popup] write settings
+[2020-12-02T21:49:10.449Z] debug: [twx-studio:upgrade:Metadata102-popup] copy runtime extensions
+[2020-12-02T21:49:10.556Z] debug: [twx-studio:upgrade:Metadata102-popup] packageThemeSet
+[2020-12-02T21:49:11.170Z] debug: [twx-studio:upgrade:Metadata102-popup] onBuild
+[2020-12-02T21:49:11.170Z] info: [twx-studio:upgrade:Metadata102-popup] Building ves-ar-extension app:
+[2020-12-02T21:49:11.184Z] debug: [twx-studio:upgrade:Metadata102-popup] pathDir
+[2020-12-02T21:49:11.185Z] debug: [twx-studio:upgrade:Metadata102-popup] scaffoldDir
+[2020-12-02T21:49:11.185Z] debug: [twx-studio:upgrade:Metadata102-popup] copySrc
+[2020-12-02T21:49:11.291Z] debug: [twx-studio:upgrade:Metadata102-popup] buildApp
+[2020-12-02T21:49:11.432Z] debug: [twx-studio:upgrade:Metadata102-popup] END buildApp
+[2020-12-02T21:49:11.433Z] debug: [twx-studio:upgrade:Metadata102-popup] Build succeeded.
+
+2020-12-03T16:21:39.376Z: Project "Metadata102-popup" saved as new project "Metadata200"
+2020-12-03T16:32:32.320Z: Project "Metadata200" saved as new project "Metadata_300"[2020-12-03T16:36:11.562Z] debug: [twx-studio:upgrade:Metadata_300] Begin upgrade of project
+[2020-12-03T16:36:11.563Z] info: [twx-studio:upgrade:Metadata_300] Upgrading project
+[2020-12-03T16:36:11.568Z] debug: [twx-studio:upgrade:Metadata_300] Make sure there are not any stale files lying around
+[2020-12-03T16:36:11.568Z] debug: [twx-studio:upgrade:Metadata_300] Removing 
+[2020-12-03T16:36:11.586Z] debug: [twx-studio:upgrade:Metadata_300] Create .gitignore for project dir
+[2020-12-03T16:36:11.587Z] debug: [twx-studio:upgrade:Metadata_300] Copying /src/**/* to project, overwrite=false
+[2020-12-03T16:36:11.591Z] debug: [twx-studio:upgrade:Metadata_300] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2020-12-03T16:36:11.637Z] debug: [twx-studio:upgrade:Metadata_300] Copy of project files complete
+[2020-12-03T16:36:11.637Z] debug: [twx-studio:upgrade:Metadata_300] Updating version to 
+[2020-12-03T16:36:11.637Z] debug: [twx-studio:upgrade:Metadata_300] onupgrade sucessful, now build the project
+[2020-12-03T16:36:11.638Z] debug: [twx-studio:upgrade:Metadata_300] BEGIN buildApp
+[2020-12-03T16:36:11.638Z] debug: [twx-studio:upgrade:Metadata_300] write settings
+[2020-12-03T16:36:11.638Z] debug: [twx-studio:upgrade:Metadata_300] copy runtime extensions
+[2020-12-03T16:36:11.759Z] debug: [twx-studio:upgrade:Metadata_300] packageThemeSet
+[2020-12-03T16:36:12.926Z] debug: [twx-studio:upgrade:Metadata_300] onBuild
+[2020-12-03T16:36:12.926Z] info: [twx-studio:upgrade:Metadata_300] Building ves-ar-extension app:
+[2020-12-03T16:36:12.940Z] debug: [twx-studio:upgrade:Metadata_300] pathDir
+[2020-12-03T16:36:12.941Z] debug: [twx-studio:upgrade:Metadata_300] scaffoldDir
+[2020-12-03T16:36:12.941Z] debug: [twx-studio:upgrade:Metadata_300] copySrc
+[2020-12-03T16:36:13.054Z] debug: [twx-studio:upgrade:Metadata_300] buildApp
+[2020-12-03T16:36:13.645Z] debug: [twx-studio:upgrade:Metadata_300] END buildApp
+[2020-12-03T16:36:13.645Z] debug: [twx-studio:upgrade:Metadata_300] Build succeeded.
+[2021-01-08T20:40:45.190Z] debug: [twx-studio:upgrade:Metadata_301__1_] Begin upgrade of project
+[2021-01-08T20:40:45.191Z] info: [twx-studio:upgrade:Metadata_301__1_] Upgrading project
+[2021-01-08T20:40:45.194Z] debug: [twx-studio:upgrade:Metadata_301__1_] Make sure there are not any stale files lying around
+[2021-01-08T20:40:45.195Z] debug: [twx-studio:upgrade:Metadata_301__1_] Removing 
+[2021-01-08T20:40:45.209Z] debug: [twx-studio:upgrade:Metadata_301__1_] Create .gitignore for project dir
+[2021-01-08T20:40:45.217Z] debug: [twx-studio:upgrade:Metadata_301__1_] Copying /src/**/* to project, overwrite=false
+[2021-01-08T20:40:45.218Z] debug: [twx-studio:upgrade:Metadata_301__1_] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-01-08T20:40:45.254Z] debug: [twx-studio:upgrade:Metadata_301__1_] Copy of project files complete
+[2021-01-08T20:40:45.254Z] debug: [twx-studio:upgrade:Metadata_301__1_] Updating version to 
+[2021-01-08T20:40:45.254Z] debug: [twx-studio:upgrade:Metadata_301__1_] onupgrade sucessful, now build the project
+[2021-01-08T20:40:45.255Z] debug: [twx-studio:upgrade:Metadata_301__1_] BEGIN buildApp
+[2021-01-08T20:40:45.255Z] debug: [twx-studio:upgrade:Metadata_301__1_] write settings
+[2021-01-08T20:40:45.255Z] debug: [twx-studio:upgrade:Metadata_301__1_] copy runtime extensions
+[2021-01-08T20:40:45.357Z] debug: [twx-studio:upgrade:Metadata_301__1_] packageThemeSet
+[2021-01-08T20:40:45.985Z] debug: [twx-studio:upgrade:Metadata_301__1_] onBuild
+[2021-01-08T20:40:45.986Z] info: [twx-studio:upgrade:Metadata_301__1_] Building ves-ar-extension app:
+[2021-01-08T20:40:46.002Z] debug: [twx-studio:upgrade:Metadata_301__1_] pathDir
+[2021-01-08T20:40:46.002Z] debug: [twx-studio:upgrade:Metadata_301__1_] scaffoldDir
+[2021-01-08T20:40:46.002Z] debug: [twx-studio:upgrade:Metadata_301__1_] copySrc
+[2021-01-08T20:40:46.105Z] debug: [twx-studio:upgrade:Metadata_301__1_] buildApp
+[2021-01-08T20:40:46.280Z] debug: [twx-studio:upgrade:Metadata_301__1_] END buildApp
+[2021-01-08T20:40:46.280Z] debug: [twx-studio:upgrade:Metadata_301__1_] Build succeeded.
