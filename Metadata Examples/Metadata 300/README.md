@@ -1,7 +1,11 @@
-<<<<<<< HEAD
-This folder features examples that take advantage of the underlying metadata that can be added as attributes for a model. It features the following example projects and will be continuously updated:  
-*Metadata 101 - Using Attributes in Creo Illustrate
-*Metadata 201 - Using JavaScript to Highlight Parts and Create Ionic Popups
-=======
-Metadata 300 folder
->>>>>>> 3f744da202b0a90f8fe9391f99b0d2a197ac05f1
+This folder contains all information for the Metadata 300 set of projects 
+* Metadata 301 - Adding Pricing Data and a Shopping Cart to a Model.pdf 
+* Metadata 302 - Add a Simple ThingWorx Service to Vuforia Studio.pdf 
+* Metadata 303 - Creating a Persistent Cart Using ThingWorx.pdf 
+* Metadata301, the corresponding project file for the Metadata 301 pdf 
+* Metadata302, the corresponding project file for the Metadata 302 pdf 
+* Metadata303, the corresponding project file for the Metadata 303 pdf
+* quadcopter_complete.csv, the finished .csv file for Metadata 301 
+* quadcopter301.c3di, the completed c3di file for the model for this section 
+* quadcopter301.pvz, the completed .pvz model for this section
+
