@@ -94,7 +94,7 @@
       "children": [
         {
           "attributes": {
-            "databind-id": "db-1605206407606",
+            "databind-id": "db-1611178444622",
             "source-type": "ui",
             "source-label": "Text Input",
             "source-name": "userInput",
@@ -107,36 +107,6 @@
           "name": "twx-databind"
         }
       ]
-    },
-    {
-      "attributes": {
-        "id": "cartButton",
-        "isbound": "false",
-        "isdeletable": "true",
-        "name": "cartButton",
-        "value": ""
-      },
-      "name": "twx-app-param"
-    },
-    {
-      "attributes": {
-        "id": "cart",
-        "isbound": "false",
-        "isdeletable": "true",
-        "name": "cart",
-        "value": ""
-      },
-      "name": "twx-app-param"
-    },
-    {
-      "attributes": {
-        "id": "priceInfo",
-        "isbound": "false",
-        "isdeletable": "true",
-        "name": "priceInfo",
-        "value": ""
-      },
-      "name": "twx-app-param"
     },
     {
       "attributes": {
@@ -164,6 +134,36 @@
         "isbound": "false",
         "isdeletable": "true",
         "name": "itemNumber",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "priceInfo",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "priceInfo",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "cartLabel",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cartLabel",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "cart",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cart",
         "value": ""
       },
       "name": "twx-app-param"

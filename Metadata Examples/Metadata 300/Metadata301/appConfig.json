@@ -1,9 +1,8 @@
 {
-  "name": "Metadata_301 (1)",
+  "name": "Metadata 301 FINAL",
   "projectType": "AR",
   "viewType": "ar",
-  "fileName": "Metadata_301__1_",
-  "thingworxServer": "http://pp-2010061435yb.portal.ptc.io:8181",
+  "fileName": "Metadata_301_FINAL",
   "viewTemplateFileName": "home-ar.json",
   "state": {
     "orientation": "landscape"

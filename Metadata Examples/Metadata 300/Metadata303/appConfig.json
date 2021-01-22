@@ -1,9 +1,8 @@
 {
-  "name": "Metadata 303-hardcodecopy",
+  "name": "Metadata 303 FINAL",
   "projectType": "AR",
   "viewType": "ar",
-  "fileName": "Metadata_303-hardcodecopy",
-  "thingworxServer": "https://xuqztwnu.pp.vuforia.io",
+  "fileName": "Metadata_303_FINAL",
   "viewTemplateFileName": "home-ar.json",
   "state": {
     "orientation": "landscape"

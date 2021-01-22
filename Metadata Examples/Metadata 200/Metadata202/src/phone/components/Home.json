@@ -246,7 +246,7 @@
                                                     "twx-widget": "",
                                                     "widget-id": "userInput",
                                                     "widget-name": "userInput",
-                                                    "placeholder": "type here"
+                                                    "placeholder": "Type here"
                                                   },
                                                   "name": "twx-text-input"
                                                 }
@@ -272,7 +272,7 @@
                                                     "widget-id": "findButton",
                                                     "widget-name": "findButton",
                                                     "click-expression": "findMeta()",
-                                                    "text": "find"
+                                                    "text": "Find"
                                                   },
                                                   "name": "twx-button"
                                                 }

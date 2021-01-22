@@ -1,8 +1,8 @@
 {
-  "name": "Metadata 302",
+  "name": "Metadata 302 FINAL",
   "projectType": "AR",
   "viewType": "ar",
-  "fileName": "Metadata_302_1",
+  "fileName": "Metadata_302_FINAL",
   "viewTemplateFileName": "home-ar.json",
   "state": {
     "orientation": "landscape"
@@ -49,6 +49,5 @@
   "fontRuntimeDir": "../fonts",
   "fontDesigntimeDir": "../dist/fonts",
   "theme": "twx-light",
-  "version": "1.54.1853",
-  "thingworxServer": "https://xuqztwnu.pp.vuforia.io"
+  "version": "1.54.1853"
 }

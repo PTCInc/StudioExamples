@@ -213,7 +213,8 @@
                                                                     "twx-widget": "",
                                                                     "widget-id": "row-3",
                                                                     "widget-name": "row-3",
-                                                                    "is-widget-container": "true"
+                                                                    "is-widget-container": "true",
+                                                                    "rowclass": "cart"
                                                                   },
                                                                   "name": "twx-row",
                                                                   "children": [
@@ -226,7 +227,9 @@
                                                                             "widget-id": "column-7",
                                                                             "widget-name": "column-7",
                                                                             "is-widget-container": "true",
-                                                                            "alignment": "flex-end"
+                                                                            "class": "",
+                                                                            "alignment": "center",
+                                                                            "padding": "5px"
                                                                           },
                                                                           "name": "twx-col",
                                                                           "children": [
@@ -236,20 +239,21 @@
                                                                                 {
                                                                                   "attributes": {
                                                                                     "twx-widget": "",
-                                                                                    "widget-id": "buttonCart",
-                                                                                    "widget-name": "buttonCart"
+                                                                                    "widget-id": "labelCart",
+                                                                                    "state-format-value": "text",
+                                                                                    "widget-name": "labelCart"
                                                                                   },
-                                                                                  "name": "twx-button",
+                                                                                  "name": "twx-label",
                                                                                   "children": [
                                                                                     {
                                                                                       "attributes": {
-                                                                                        "databind-id": "db-1607033644989",
+                                                                                        "databind-id": "db-1611181981213",
                                                                                         "source-type": "data",
-                                                                                        "source-name": "cartButton",
+                                                                                        "source-name": "cartLabel",
                                                                                         "source-item-type": "value",
-                                                                                        "source-item-name": "cartButton",
+                                                                                        "source-item-name": "cartLabel",
                                                                                         "binding-type": "custom_field",
-                                                                                        "from-expression": "app.params['cartButton']",
+                                                                                        "from-expression": "app.params['cartLabel']",
                                                                                         "to-property": "text"
                                                                                       },
                                                                                       "name": "twx-databind"
@@ -269,7 +273,8 @@
                                                                     "twx-widget": "",
                                                                     "widget-id": "row-4",
                                                                     "widget-name": "row-4",
-                                                                    "is-widget-container": "true"
+                                                                    "is-widget-container": "true",
+                                                                    "rowclass": "cartlabels"
                                                                   },
                                                                   "name": "twx-row",
                                                                   "children": [
@@ -281,7 +286,106 @@
                                                                             "twx-widget": "",
                                                                             "widget-id": "column-8",
                                                                             "widget-name": "column-8",
-                                                                            "is-widget-container": "true"
+                                                                            "is-widget-container": "true",
+                                                                            "alignment": "flex-start"
+                                                                          },
+                                                                          "name": "twx-col",
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "twx-container-content",
+                                                                              "children": [
+                                                                                {
+                                                                                  "attributes": {
+                                                                                    "twx-widget": "",
+                                                                                    "widget-id": "label-2",
+                                                                                    "state-format-value": "text",
+                                                                                    "widget-name": "label-2",
+                                                                                    "text": "Part Number"
+                                                                                  },
+                                                                                  "name": "twx-label"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "attributes": {
+                                                                            "twx-widget": "",
+                                                                            "widget-id": "column-11",
+                                                                            "widget-name": "column-11",
+                                                                            "is-widget-container": "true",
+                                                                            "alignment": "center"
+                                                                          },
+                                                                          "name": "twx-col",
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "twx-container-content",
+                                                                              "children": [
+                                                                                {
+                                                                                  "attributes": {
+                                                                                    "twx-widget": "",
+                                                                                    "widget-id": "label-3",
+                                                                                    "state-format-value": "text",
+                                                                                    "widget-name": "label-3",
+                                                                                    "text": "Quantity"
+                                                                                  },
+                                                                                  "name": "twx-label"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "attributes": {
+                                                                            "twx-widget": "",
+                                                                            "widget-id": "column-12",
+                                                                            "widget-name": "column-12",
+                                                                            "is-widget-container": "true",
+                                                                            "alignment": "flex-end"
+                                                                          },
+                                                                          "name": "twx-col",
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "twx-container-content",
+                                                                              "children": [
+                                                                                {
+                                                                                  "attributes": {
+                                                                                    "twx-widget": "",
+                                                                                    "widget-id": "label-4",
+                                                                                    "state-format-value": "text",
+                                                                                    "widget-name": "label-4",
+                                                                                    "text": "Price"
+                                                                                  },
+                                                                                  "name": "twx-label"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "row-5",
+                                                                    "widget-name": "row-5",
+                                                                    "is-widget-container": "true",
+                                                                    "rowclass": ""
+                                                                  },
+                                                                  "name": "twx-row",
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "twx-container-content",
+                                                                      "children": [
+                                                                        {
+                                                                          "attributes": {
+                                                                            "twx-widget": "",
+                                                                            "widget-id": "column-9",
+                                                                            "widget-name": "column-9",
+                                                                            "is-widget-container": "true",
+                                                                            "class": ""
                                                                           },
                                                                           "name": "twx-col",
                                                                           "children": [
@@ -293,13 +397,14 @@
                                                                                     "twx-widget": "",
                                                                                     "widget-id": "cartRepeater",
                                                                                     "widget-name": "cartRepeater",
-                                                                                    "is-widget-repeater": "true"
+                                                                                    "is-widget-repeater": "true",
+                                                                                    "class": ""
                                                                                   },
                                                                                   "name": "twx-repeater",
                                                                                   "children": [
                                                                                     {
                                                                                       "attributes": {
-                                                                                        "databind-id": "db-1607033792032",
+                                                                                        "databind-id": "db-1611182306361",
                                                                                         "source-type": "data",
                                                                                         "source-name": "cart",
                                                                                         "source-item-type": "value",
@@ -318,7 +423,8 @@
                                                                                             "twx-widget": "",
                                                                                             "widget-id": "gridLayout-4",
                                                                                             "widget-name": "gridLayout-4",
-                                                                                            "is-widget-container": "true"
+                                                                                            "is-widget-container": "true",
+                                                                                            "class": "repeater"
                                                                                           },
                                                                                           "name": "twx-gridlayout",
                                                                                           "children": [
@@ -328,9 +434,10 @@
                                                                                                 {
                                                                                                   "attributes": {
                                                                                                     "twx-widget": "",
-                                                                                                    "widget-id": "row-6",
-                                                                                                    "widget-name": "row-6",
-                                                                                                    "is-widget-container": "true"
+                                                                                                    "widget-id": "row-7",
+                                                                                                    "widget-name": "row-7",
+                                                                                                    "is-widget-container": "true",
+                                                                                                    "rowclass": ""
                                                                                                   },
                                                                                                   "name": "twx-row",
                                                                                                   "children": [
@@ -340,9 +447,11 @@
                                                                                                         {
                                                                                                           "attributes": {
                                                                                                             "twx-widget": "",
-                                                                                                            "widget-id": "column-10",
-                                                                                                            "widget-name": "column-10",
-                                                                                                            "is-widget-container": "true"
+                                                                                                            "widget-id": "column-13",
+                                                                                                            "widget-name": "column-13",
+                                                                                                            "is-widget-container": "true",
+                                                                                                            "class": "",
+                                                                                                            "alignment": "flex-start"
                                                                                                           },
                                                                                                           "name": "twx-col",
                                                                                                           "children": [
@@ -352,10 +461,11 @@
                                                                                                                 {
                                                                                                                   "attributes": {
                                                                                                                     "twx-widget": "",
-                                                                                                                    "widget-id": "label-1",
+                                                                                                                    "widget-id": "label-5",
                                                                                                                     "state-format-value": "text",
-                                                                                                                    "widget-name": "label-1",
-                                                                                                                    "text": "{{item.tag}}"
+                                                                                                                    "widget-name": "label-5",
+                                                                                                                    "text": "{{item.tag}}",
+                                                                                                                    "class": ""
                                                                                                                   },
                                                                                                                   "name": "twx-label"
                                                                                                                 }
@@ -366,9 +476,11 @@
                                                                                                         {
                                                                                                           "attributes": {
                                                                                                             "twx-widget": "",
-                                                                                                            "widget-id": "column-11",
-                                                                                                            "widget-name": "column-11",
-                                                                                                            "is-widget-container": "true"
+                                                                                                            "widget-id": "column-14",
+                                                                                                            "widget-name": "column-14",
+                                                                                                            "is-widget-container": "true",
+                                                                                                            "class": "",
+                                                                                                            "alignment": "center"
                                                                                                           },
                                                                                                           "name": "twx-col",
                                                                                                           "children": [
@@ -378,10 +490,11 @@
                                                                                                                 {
                                                                                                                   "attributes": {
                                                                                                                     "twx-widget": "",
-                                                                                                                    "widget-id": "label-2",
+                                                                                                                    "widget-id": "label-6",
                                                                                                                     "state-format-value": "text",
-                                                                                                                    "widget-name": "label-2",
-                                                                                                                    "text": "{{item.count}}"
+                                                                                                                    "widget-name": "label-6",
+                                                                                                                    "text": "{{item.count}}",
+                                                                                                                    "class": ""
                                                                                                                   },
                                                                                                                   "name": "twx-label"
                                                                                                                 }
@@ -392,9 +505,11 @@
                                                                                                         {
                                                                                                           "attributes": {
                                                                                                             "twx-widget": "",
-                                                                                                            "widget-id": "column-12",
-                                                                                                            "widget-name": "column-12",
-                                                                                                            "is-widget-container": "true"
+                                                                                                            "widget-id": "column-15",
+                                                                                                            "widget-name": "column-15",
+                                                                                                            "is-widget-container": "true",
+                                                                                                            "class": "",
+                                                                                                            "alignment": "flex-end"
                                                                                                           },
                                                                                                           "name": "twx-col",
                                                                                                           "children": [
@@ -404,10 +519,11 @@
                                                                                                                 {
                                                                                                                   "attributes": {
                                                                                                                     "twx-widget": "",
-                                                                                                                    "widget-id": "label-3",
+                                                                                                                    "widget-id": "label-7",
                                                                                                                     "state-format-value": "text",
-                                                                                                                    "widget-name": "label-3",
-                                                                                                                    "text": "${{item.prc}}"
+                                                                                                                    "widget-name": "label-7",
+                                                                                                                    "text": "${{item.prc}}",
+                                                                                                                    "class": ""
                                                                                                                   },
                                                                                                                   "name": "twx-label"
                                                                                                                 }
@@ -438,9 +554,10 @@
                                                                 {
                                                                   "attributes": {
                                                                     "twx-widget": "",
-                                                                    "widget-id": "row-5",
-                                                                    "widget-name": "row-5",
-                                                                    "is-widget-container": "true"
+                                                                    "widget-id": "row-6",
+                                                                    "widget-name": "row-6",
+                                                                    "is-widget-container": "true",
+                                                                    "rowclass": "cart"
                                                                   },
                                                                   "name": "twx-row",
                                                                   "children": [
@@ -450,8 +567,8 @@
                                                                         {
                                                                           "attributes": {
                                                                             "twx-widget": "",
-                                                                            "widget-id": "column-9",
-                                                                            "widget-name": "column-9",
+                                                                            "widget-id": "column-10",
+                                                                            "widget-name": "column-10",
                                                                             "is-widget-container": "true"
                                                                           },
                                                                           "name": "twx-col",
@@ -464,8 +581,8 @@
                                                                                     "twx-widget": "",
                                                                                     "widget-id": "orderButton",
                                                                                     "widget-name": "orderButton",
-                                                                                    "click-expression": "orderCart()",
-                                                                                    "text": "Order"
+                                                                                    "text": "Order",
+                                                                                    "class": "btnorder"
                                                                                   },
                                                                                   "name": "twx-button"
                                                                                 }
@@ -476,9 +593,10 @@
                                                                         {
                                                                           "attributes": {
                                                                             "twx-widget": "",
-                                                                            "widget-id": "column-13",
-                                                                            "widget-name": "column-13",
-                                                                            "is-widget-container": "true"
+                                                                            "widget-id": "column-16",
+                                                                            "widget-name": "column-16",
+                                                                            "is-widget-container": "true",
+                                                                            "alignment": "flex-end"
                                                                           },
                                                                           "name": "twx-col",
                                                                           "children": [
@@ -491,7 +609,8 @@
                                                                                     "widget-id": "clearButton",
                                                                                     "widget-name": "clearButton",
                                                                                     "click-expression": "clearCart()",
-                                                                                    "text": "Clear"
+                                                                                    "text": "Clear",
+                                                                                    "class": "btnclear"
                                                                                   },
                                                                                   "name": "twx-button"
                                                                                 }
@@ -581,7 +700,7 @@
                                                     "twx-widget": "",
                                                     "widget-id": "userInput",
                                                     "widget-name": "userInput",
-                                                    "placeholder": "type here"
+                                                    "placeholder": "Type here"
                                                   },
                                                   "name": "twx-text-input"
                                                 }
@@ -607,7 +726,8 @@
                                                     "widget-id": "findButton",
                                                     "widget-name": "findButton",
                                                     "click-expression": "findMeta()",
-                                                    "text": "find"
+                                                    "text": "Find",
+                                                    "class": "btnfind"
                                                   },
                                                   "name": "twx-button"
                                                 }
@@ -634,7 +754,8 @@
                                                     "widget-id": "resetButton",
                                                     "widget-name": "resetButton",
                                                     "click-expression": "resetit()",
-                                                    "text": "reset"
+                                                    "text": "reset",
+                                                    "class": "btnreset"
                                                   },
                                                   "name": "twx-button"
                                                 }

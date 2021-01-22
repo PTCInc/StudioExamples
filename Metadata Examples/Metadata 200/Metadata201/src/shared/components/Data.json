@@ -32,16 +32,6 @@
         "value": ""
       },
       "name": "twx-app-param"
-    },
-    {
-      "attributes": {
-        "id": "partno",
-        "isbound": "false",
-        "isdeletable": "true",
-        "name": "partno",
-        "value": ""
-      },
-      "name": "twx-app-param"
     }
   ],
   "name": "twx-app-mdl"
