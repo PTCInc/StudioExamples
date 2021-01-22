@@ -7,5 +7,6 @@ This folder contains all information for the Metadata 300 set of projects
 * Metadata303, the corresponding project file for the Metadata 303 pdf
 * quadcopter_complete.csv, the finished .csv file for Metadata 301 
 * quadcopter301.c3di, the completed c3di file for the model for this section 
-* quadcopter301.pvz, the completed .pvz model for this section
+* quadcopter301.pvz, the completed .pvz model for this section 
+* metaShoppingEntities.twx is the ThingWorx instance associated with Metadata 302 and 303
 
