@@ -30,6 +30,7 @@ $scope.$on('userpick', function (event, targetName, targetType, eventData) {
           return;
         
         pathId = pathId.substr(0, child);
+        $scope.currentSelection = targetName + "-" + pathId
         
       } else {
         welding = false;
@@ -228,6 +229,18 @@ $scope.addToCart = function () {
   twx.app.fn.triggerDataService('cartThing', 'addToCart', {pid: $scope.meta.partNumber, qty: 1, price: $scope.price});
 
 } // end of addToCart function
+
+/*$scope.$on('addToCart.serviceInvokeComplete', function(evt) {
+	twx.app.fn.triggerDataService('cartThing', 'getCart')
+})
+
+$scope.$on('clearCart.serviceInvokeComplete', function(evt) {
+	twx.app.fn.triggerDataService('cartThing', 'getCart')
+})
+
+$scope.$on('orderCart.serviceInvokeComplete', function(evt) {
+	twx.app.fn.triggerDataService('cartThing', 'getCart')
+})*/
 
 //
 // function for setting the template for the Ionic popup

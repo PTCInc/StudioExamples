@@ -13,38 +13,6 @@
       "children": [
         {
           "attributes": {
-            "name": "description",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"description\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "name",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"name\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "tags",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"tags\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "thingTemplate",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"thingTemplate\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
             "name": "getPriceAvailability",
             "id": "getPriceAvailability"
           },
@@ -60,46 +28,6 @@
       },
       "name": "twx-model",
       "children": [
-        {
-          "attributes": {
-            "name": "description",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"cartThing\"].properties[\"description\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "name",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"cartThing\"].properties[\"name\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "numberOfOrders",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"cartThing\"].properties[\"numberOfOrders\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "tags",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"cartThing\"].properties[\"tags\"]"
-          },
-          "name": "twx-model-property"
-        },
-        {
-          "attributes": {
-            "name": "thingTemplate",
-            "twx-auto-refresh": "true",
-            "twx-model": "app.mdl[\"cartThing\"].properties[\"thingTemplate\"]"
-          },
-          "name": "twx-model-property"
-        },
         {
           "attributes": {
             "name": "getCart",
@@ -137,14 +65,6 @@
         },
         {
           "attributes": {
-            "id": "somethingChanged",
-            "name": "somethingChanged",
-            "sourceproperty": ""
-          },
-          "name": "twx-model-event"
-        },
-        {
-          "attributes": {
             "eventbind-id": "eb-1611271894439",
             "source-type": "service",
             "source-label": "ServiceInvokeComplete",
@@ -159,11 +79,39 @@
         },
         {
           "attributes": {
-            "eventbind-id": "eb-1611272558591",
-            "source-type": "event",
-            "source-label": "somethingChanged",
+            "eventbind-id": "eb-1612532058774",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
             "source-name": "cartThing",
-            "source-event": "somethingChanged",
+            "source-event": "addToCart.serviceInvokeComplete",
+            "handler-type": "data",
+            "handler-name": "cartThing",
+            "handler-service": "getCart",
+            "handler-path": "app.mdl.cartThing.svc.getCart"
+          },
+          "name": "twx-eventbind"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-1612532118926",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
+            "source-name": "cartThing",
+            "source-event": "clearCart.serviceInvokeComplete",
+            "handler-type": "data",
+            "handler-name": "cartThing",
+            "handler-service": "getCart",
+            "handler-path": "app.mdl.cartThing.svc.getCart"
+          },
+          "name": "twx-eventbind"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-1612532308086",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
+            "source-name": "cartThing",
+            "source-event": "orderCart.serviceInvokeComplete",
             "handler-type": "data",
             "handler-name": "cartThing",
             "handler-service": "getCart",
