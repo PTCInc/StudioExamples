@@ -230,18 +230,6 @@ $scope.addToCart = function () {
 
 } // end of addToCart function
 
-/*$scope.$on('addToCart.serviceInvokeComplete', function(evt) {
-	twx.app.fn.triggerDataService('cartThing', 'getCart')
-})
-
-$scope.$on('clearCart.serviceInvokeComplete', function(evt) {
-	twx.app.fn.triggerDataService('cartThing', 'getCart')
-})
-
-$scope.$on('orderCart.serviceInvokeComplete', function(evt) {
-	twx.app.fn.triggerDataService('cartThing', 'getCart')
-})*/
-
 //
 // function for setting the template for the Ionic popup
 $scope.setTemplate = function (meta, price) {
