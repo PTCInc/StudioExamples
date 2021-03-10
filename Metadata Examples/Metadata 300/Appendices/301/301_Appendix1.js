@@ -1,3 +1,5 @@
+
+
 //
 // triggered when user clicks on object in the scene
 $scope.$on('userpick', function (event, targetName, targetType, eventData) {
