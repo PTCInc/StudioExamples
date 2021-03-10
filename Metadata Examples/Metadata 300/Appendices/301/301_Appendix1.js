@@ -1,4 +1,4 @@
-
+// $scope, $element, $attrs, $injector, $sce, $timeout, $http, $ionicPopup, and $ionicpopup services are available
 
 //
 // triggered when user clicks on object in the scene
