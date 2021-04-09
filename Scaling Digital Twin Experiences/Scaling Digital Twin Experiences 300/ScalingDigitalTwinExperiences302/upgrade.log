@@ -1,0 +1,117 @@
+[2021-02-24T20:28:58.972Z] debug: [twx-studio:upgrade:Digital_Twin_201] Begin upgrade of project
+[2021-02-24T20:28:58.974Z] info: [twx-studio:upgrade:Digital_Twin_201] Upgrading project
+[2021-02-24T20:28:58.976Z] debug: [twx-studio:upgrade:Digital_Twin_201] Make sure there are not any stale files lying around
+[2021-02-24T20:28:58.977Z] debug: [twx-studio:upgrade:Digital_Twin_201] Create .gitignore for project dir
+[2021-02-24T20:28:58.977Z] debug: [twx-studio:upgrade:Digital_Twin_201] Copying /src/**/* to project, overwrite=false
+[2021-02-24T20:28:58.978Z] debug: [twx-studio:upgrade:Digital_Twin_201] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-02-24T20:28:59.032Z] debug: [twx-studio:upgrade:Digital_Twin_201] Copy of project files complete
+[2021-02-24T20:28:59.033Z] debug: [twx-studio:upgrade:Digital_Twin_201] Updating version to 
+[2021-02-24T20:28:59.033Z] debug: [twx-studio:upgrade:Digital_Twin_201] onupgrade sucessful, now build the project
+[2021-02-24T20:28:59.033Z] debug: [twx-studio:upgrade:Digital_Twin_201] BEGIN buildApp
+[2021-02-24T20:28:59.033Z] debug: [twx-studio:upgrade:Digital_Twin_201] write settings
+[2021-02-24T20:28:59.033Z] debug: [twx-studio:upgrade:Digital_Twin_201] copy runtime extensions
+[2021-02-24T20:28:59.136Z] debug: [twx-studio:upgrade:Digital_Twin_201] packageThemeSet
+[2021-02-24T20:28:59.750Z] debug: [twx-studio:upgrade:Digital_Twin_201] onBuild
+[2021-02-24T20:28:59.750Z] info: [twx-studio:upgrade:Digital_Twin_201] Building ves-ar-extension app:
+[2021-02-24T20:28:59.770Z] debug: [twx-studio:upgrade:Digital_Twin_201] pathDir
+[2021-02-24T20:28:59.770Z] debug: [twx-studio:upgrade:Digital_Twin_201] scaffoldDir
+[2021-02-24T20:28:59.770Z] debug: [twx-studio:upgrade:Digital_Twin_201] copySrc
+[2021-02-24T20:28:59.854Z] debug: [twx-studio:upgrade:Digital_Twin_201] buildApp
+[2021-02-24T20:28:59.952Z] debug: [twx-studio:upgrade:Digital_Twin_201] END buildApp
+[2021-02-24T20:28:59.952Z] debug: [twx-studio:upgrade:Digital_Twin_201] Build succeeded.
+
+2021-03-17T13:21:28.727Z: Project "Digital_Twin_201" saved as new project "DigitalTwin202"[2021-03-17T13:21:32.787Z] debug: [twx-studio:upgrade:DigitalTwin202] Begin upgrade of project
+[2021-03-17T13:21:32.788Z] info: [twx-studio:upgrade:DigitalTwin202] Upgrading project
+[2021-03-17T13:21:32.818Z] debug: [twx-studio:upgrade:DigitalTwin202] Make sure there are not any stale files lying around
+[2021-03-17T13:21:32.818Z] debug: [twx-studio:upgrade:DigitalTwin202] Removing 
+[2021-03-17T13:21:32.829Z] debug: [twx-studio:upgrade:DigitalTwin202] Create .gitignore for project dir
+[2021-03-17T13:21:32.829Z] debug: [twx-studio:upgrade:DigitalTwin202] Copying /src/**/* to project, overwrite=false
+[2021-03-17T13:21:32.836Z] debug: [twx-studio:upgrade:DigitalTwin202] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-03-17T13:21:32.885Z] debug: [twx-studio:upgrade:DigitalTwin202] Copy of project files complete
+[2021-03-17T13:21:32.885Z] debug: [twx-studio:upgrade:DigitalTwin202] Updating version to 
+[2021-03-17T13:21:32.885Z] debug: [twx-studio:upgrade:DigitalTwin202] onupgrade sucessful, now build the project
+[2021-03-17T13:21:32.888Z] debug: [twx-studio:upgrade:DigitalTwin202] BEGIN buildApp
+[2021-03-17T13:21:32.888Z] debug: [twx-studio:upgrade:DigitalTwin202] write settings
+[2021-03-17T13:21:32.888Z] debug: [twx-studio:upgrade:DigitalTwin202] copy runtime extensions
+[2021-03-17T13:21:33.014Z] debug: [twx-studio:upgrade:DigitalTwin202] packageThemeSet
+[2021-03-17T13:21:33.608Z] debug: [twx-studio:upgrade:DigitalTwin202] onBuild
+[2021-03-17T13:21:33.608Z] info: [twx-studio:upgrade:DigitalTwin202] Building ves-ar-extension app:
+[2021-03-17T13:21:33.622Z] debug: [twx-studio:upgrade:DigitalTwin202] pathDir
+[2021-03-17T13:21:33.622Z] debug: [twx-studio:upgrade:DigitalTwin202] scaffoldDir
+[2021-03-17T13:21:33.622Z] debug: [twx-studio:upgrade:DigitalTwin202] copySrc
+[2021-03-17T13:21:33.744Z] debug: [twx-studio:upgrade:DigitalTwin202] buildApp
+[2021-03-17T13:21:33.922Z] debug: [twx-studio:upgrade:DigitalTwin202] END buildApp
+[2021-03-17T13:21:33.922Z] debug: [twx-studio:upgrade:DigitalTwin202] Build succeeded.
+[2021-03-22T18:59:25.601Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Begin upgrade of project
+[2021-03-22T18:59:25.602Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Upgrading project
+[2021-03-22T18:59:25.604Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Make sure there are not any stale files lying around
+[2021-03-22T18:59:25.605Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-03-22T18:59:25.621Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-03-22T18:59:25.751Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-03-22T18:59:25.801Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-03-22T18:59:25.819Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-03-22T18:59:25.823Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copying /src/**/* to project, overwrite=false
+[2021-03-22T18:59:25.830Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-03-22T18:59:25.878Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copy of project files complete
+[2021-03-22T18:59:25.878Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Updating version to 
+[2021-03-22T18:59:25.878Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] onupgrade sucessful, now build the project
+[2021-03-22T18:59:25.879Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] BEGIN buildApp
+[2021-03-22T18:59:25.879Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] write settings
+[2021-03-22T18:59:25.879Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] copy runtime extensions
+[2021-03-22T18:59:26.006Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] packageThemeSet
+[2021-03-22T18:59:26.640Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] onBuild
+[2021-03-22T18:59:26.640Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Building ves-ar-extension app:
+[2021-03-22T18:59:26.656Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] pathDir
+[2021-03-22T18:59:26.656Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] scaffoldDir
+[2021-03-22T18:59:26.656Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] copySrc
+[2021-03-22T18:59:26.773Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] buildApp
+[2021-03-22T18:59:26.947Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] END buildApp
+[2021-03-22T18:59:26.947Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Build succeeded.
+[2021-04-06T18:56:52.923Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Begin upgrade of project
+[2021-04-06T18:56:52.924Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Upgrading project
+[2021-04-06T18:56:52.927Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Make sure there are not any stale files lying around
+[2021-04-06T18:56:52.927Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-04-06T18:56:52.945Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-04-06T18:56:53.085Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-04-06T18:56:53.135Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-04-06T18:56:53.154Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Removing 
+[2021-04-06T18:56:53.159Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copying /src/**/* to project, overwrite=false
+[2021-04-06T18:56:53.160Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-04-06T18:56:53.236Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Copy of project files complete
+[2021-04-06T18:56:53.236Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Updating version to 
+[2021-04-06T18:56:53.236Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] onupgrade sucessful, now build the project
+[2021-04-06T18:56:53.236Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] BEGIN buildApp
+[2021-04-06T18:56:53.237Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] write settings
+[2021-04-06T18:56:53.237Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] copy runtime extensions
+[2021-04-06T18:56:53.369Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] packageThemeSet
+[2021-04-06T18:56:54.120Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] onBuild
+[2021-04-06T18:56:54.120Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Building ves-ar-extension app:
+[2021-04-06T18:56:54.136Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] pathDir
+[2021-04-06T18:56:54.136Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] scaffoldDir
+[2021-04-06T18:56:54.136Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] copySrc
+[2021-04-06T18:56:54.235Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] buildApp
+[2021-04-06T18:56:54.413Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] END buildApp
+[2021-04-06T18:56:54.414Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences202] Build succeeded.
+
+2021-04-09T17:40:48.938Z: Project "ScalingDigitalTwinExperiences202" saved as new project "ScalingDigitalTwinExperiences302-copy"[2021-04-09T17:52:32.075Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Begin upgrade of project
+[2021-04-09T17:52:32.076Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Upgrading project
+[2021-04-09T17:52:32.079Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Make sure there are not any stale files lying around
+[2021-04-09T17:52:32.079Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Removing 
+[2021-04-09T17:52:32.092Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Create .gitignore for project dir
+[2021-04-09T17:52:32.101Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Copying /src/**/* to project, overwrite=false
+[2021-04-09T17:52:32.102Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-04-09T17:52:32.146Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Copy of project files complete
+[2021-04-09T17:52:32.146Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Updating version to 
+[2021-04-09T17:52:32.147Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] onupgrade sucessful, now build the project
+[2021-04-09T17:52:32.147Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] BEGIN buildApp
+[2021-04-09T17:52:32.147Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] write settings
+[2021-04-09T17:52:32.147Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] copy runtime extensions
+[2021-04-09T17:52:32.266Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] packageThemeSet
+[2021-04-09T17:52:32.945Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] onBuild
+[2021-04-09T17:52:32.945Z] info: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Building ves-ar-extension app:
+[2021-04-09T17:52:32.960Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] pathDir
+[2021-04-09T17:52:32.961Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] scaffoldDir
+[2021-04-09T17:52:32.961Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] copySrc
+[2021-04-09T17:52:33.044Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] buildApp
+[2021-04-09T17:52:33.176Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] END buildApp
+[2021-04-09T17:52:33.176Z] debug: [twx-studio:upgrade:ScalingDigitalTwinExperiences302-copy] Build succeeded.

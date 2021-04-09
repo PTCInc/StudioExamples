@@ -1,0 +1,110 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "name": "Quadcopter1",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "Quadcopter1"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "batteryCharge",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"Quadcopter1\"].properties[\"batteryCharge\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "color",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"Quadcopter1\"].properties[\"color\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "modelPVZ",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"Quadcopter1\"].properties[\"modelPVZ\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "databind-id": "db-1616606234976",
+            "source-type": "data",
+            "source-name": "thing",
+            "source-item-type": "value",
+            "source-item-name": "thing",
+            "binding-type": "custom_field",
+            "from-expression": "app.params['thing']",
+            "to-property": "twx-entity-name"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "color",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "color",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1617971069882",
+            "source-type": "data",
+            "source-name": "Quadcopter1",
+            "source-item-type": "property",
+            "source-item-name": "color",
+            "binding-type": "property_field",
+            "from-expression": "app.mdl['Quadcopter1'].properties['color']",
+            "to-property": "app.params['color']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}

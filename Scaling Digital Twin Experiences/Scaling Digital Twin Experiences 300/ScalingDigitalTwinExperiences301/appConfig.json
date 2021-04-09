@@ -1,0 +1,53 @@
+{
+  "name": "ScalingDigitalTwinExperiences301",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "ScalingDigitalTwinExperiences301",
+  "viewTemplateFileName": "home-ar.json",
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "fragments": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "device": {
+    "name": "iphone",
+    "width": "667",
+    "height": "375"
+  },
+  "mainNavigationMenuStyle": "leftSideMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "1.55.1945"
+}
