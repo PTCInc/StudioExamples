@@ -1,0 +1,89 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "color",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "color",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "model",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "model",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "name": "Quadcopter1",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "Quadcopter1"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "batteryCharge",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"Quadcopter1\"].properties[\"batteryCharge\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "databind-id": "db-1617989659520",
+            "source-type": "data",
+            "source-name": "thing",
+            "source-item-type": "value",
+            "source-item-name": "thing",
+            "binding-type": "custom_field",
+            "from-expression": "app.params['thing']",
+            "to-property": "twx-entity-name"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}

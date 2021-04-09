@@ -1,0 +1,100 @@
+<!doctype html>
+<html ng-controller="AppCtrl as app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name = "format-detection" content = "telephone=no">
+  <link rel="stylesheet" href="css/system-widget-extensions.css?v<%= uuid =%>">
+  <link rel="stylesheet" href="css/app-theme.css?v<%= uuid =%>">
+
+  <!-- Extension Stylesheets -->
+  {% for file in runtimeFiles %}{% if file.endsWith('.css') %}<link rel="stylesheet" href="<%= file =%>">{% endif  %}
+  {% endfor %}
+
+  <link rel="stylesheet" href="css/app-runtime-base.css?v<%= uuid =%>">
+  <link rel="stylesheet" href="css/app.css?v<%= uuid =%>">
+  <script src="lib/cdn/ionic.bundle.min.js" type="text/javascript"></script>
+  <script src="app-runtime.js" type="text/javascript"></script>
+</head>
+<body ng-cloak class="studio-desktop" onload="loadSetup()">
+  <%= dataHTMLContents =%>
+  <ion-nav-view data-tap-disabled="true"></ion-nav-view>
+
+<script type="text/javascript">
+angular.module('vuforia-angular', []).factory('vuforiaCleanup', function() { this.cleanUpAndPause = function() {}; this.requestCleanupAndPause = function() {}; return this; }).factory('tml3dRenderer', function() { return this;});
+angular.module('ngCordova', []);
+angular.module('ngCordova.plugins.network', []);
+angular.module('twx.byoc', []);
+</script>
+
+<script src="lib/uuid.js" type="text/javascript"></script>
+<script src="lib/cdn/lodash.min.js" type="text/javascript"></script>
+<script src="lib/twx-connector.js" type="text/javascript"></script>
+<script src="lib/twx-client-core-all.js" type="text/javascript"></script>
+<script src="app/app.js?v<%= uuid =%>" type="text/javascript" charset="utf-8"></script>
+
+<!-- Extension Libraries -->
+{% for lib in extensions.runtimeLibraries %}<script src="<%= lib =%>" type="text/javascript"></script>
+{% endfor %}
+
+<script type="text/javascript">
+
+updateTitleWithExpTitle();
+
+var setUpAngularModuleAndBootstrap = function() {
+  setUpAngularModuleAndBootstrap = function() {}; //no-op guarantees won't run twice
+  angular.module('app')
+    .config(function ($stateProvider, $urlRouterProvider, $compileProvider, $ionicConfigProvider) {
+
+      $stateProvider
+        {% for v in views %}
+        .state('<%= v.fileName =%>', {
+          url: '/<%= v.fileName =%>?entityName&thing&template&vumark',
+          templateUrl: 'app/components/<%= v.fileName =%>.html',
+          cache: false,
+          controller: 'BaseCtrl'
+        })
+        {% endfor %}
+
+      $urlRouterProvider.otherwise('/<%= defaultRoute =%>');
+      $compileProvider.debugInfoEnabled(<%= angularDebugEnabled =%>);
+      $ionicConfigProvider.views.transition('none'); // disable ionic animation
+
+    }).run(function($rootScope, $timeout) {
+       $rootScope.expTitle = document.title;
+       $rootScope.enableVoiceCommands = <%= enableVoiceCommands =%>;
+       $rootScope.$on('$ionicView.afterEnter', function(event, toState, toParams, fromState, fromParams) {
+          $timeout(function() {
+               document.title = $rootScope.expTitle;
+               var expIdx = experienceInfo.findExperienceIndex(toState.stateId);
+               if(expIdx >= 0) {
+                   // update the description meta tag, only if an experience exists for the navigated-to view
+                   appendDescriptionMetaData(experienceInfo.getDescription(expIdx));
+               }
+          }, 1);
+       });
+    });
+
+  angular.bootstrap(document, ['app']);
+};
+
+var setupWrapper = function() {setUpAngularModuleAndBootstrap();};
+function setupIonicListener() {
+    window.ionic.Platform.ready(setupWrapper);
+}
+function loadSetup() {
+    window.removeEventListener('load', loadSetup, false);
+    if (window.cordova && window.cordova.plugins) {
+        setupIonicListener();
+    }
+    else {
+       document.addEventListener('deviceready', setupIonicListener, false);
+       //Add in a desktop ready event here...
+       //desktop-ready-replacement
+    }
+}
+window.addEventListener('load', loadSetup);
+//<builder-settings>
+</script>
+</body>
+</html>

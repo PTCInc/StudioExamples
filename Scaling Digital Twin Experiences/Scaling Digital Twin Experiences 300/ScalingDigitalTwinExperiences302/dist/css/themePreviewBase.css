@@ -1,0 +1,17 @@
+html > body{
+    padding: 0px 20px 20px 20px !important;
+}
+.sample-screen {
+    border: 1px solid #ccc;
+    width: 320px;
+    height: 576px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.ionic-body{
+    height: 100%;
+    position: relative;
+}
+

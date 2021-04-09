@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Theme Preview</title>
+    <link rel="stylesheet" href="../dist/css/themePreviewBase.css">
+    <link rel="stylesheet" href="twx-light-theme.css">
+    <script type="text/javascript" src="/js/lib/i18next.min.js"></script>
+    <script type="text/javascript" src="/js/lib/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="/js/lib/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="/js/i18n.js"></script>
+</head>
+<body>
+  <div class="sample-screen">
+  	<div id="example-forms-floating-labels" class="ionic-body pane">
+	    <div class="bar bar-header">
+	      <div class="h1 title" id="float-labels">Floating Labels</div>
+	    </div>
+	    <div class="content has-header">
+	      <div class="list">
+	        <label class="item item-input item-floating-label">
+	          <span class="input-label">First Name</span>
+	          <input type="text" id="first-name" placeholder="First Name">
+	        </label>
+	        <label class="item item-input item-floating-label">
+	          <span class="input-label">Last Name</span>
+	          <input type="text" id="last-name" placeholder="Last Name">
+	        </label>
+	        <label class="item item-input item-floating-label">
+	          <span class="input-label">Email</span>
+	          <input type="text" id="input-email" placeholder="Email">
+	        </label>
+	      </div>
+	      <div class="padding">
+	        <button class="button button-block button-positive" id="create-button">Create</button>
+	      </div>
+	    </div>
+	  </div>
+  </div>
+  <div class="sample-screen">
+  	<div id="example-buttons" class="ionic-body active-preview pane">
+	    <div class="bar bar-header">
+	      <div class="h1 title" id="buttons">Buttons</div>
+	    </div>
+	    <div class="content has-header padding">
+
+	      <p><button class="button button-light">button-light</button>
+	      </p><p><button class="button button-stable">button-stable</button>
+	      </p><p><button class="button button-positive">button-positive</button>
+	      </p><p><button class="button button-calm">button-calm</button>
+	      </p><p><button class="button button-balanced">button-balanced</button>
+	      </p><p><button class="button button-energized">button-energized</button>
+	      </p><p><button class="button button-assertive">button-assertive</button>
+	      </p><p><button class="button button-royal">button-royal</button>
+	      </p><p><button class="button button-dark">button-dark</button>
+
+	    </p></div>
+	  </div>
+  </div>
+  <div class="sample-screen">
+  	<div id="example-list" class="ionic-body active-preview pane">
+	    <div class="bar bar-header">
+	      <div id="list-items" class="h1 title">List Items</div>
+	    </div>
+	    <div class="content has-header">
+
+	      <ul class="list">
+
+	        <li class="item">
+	          Battletoads
+	        </li>
+	        <li class="item">
+	          Contra
+	        </li>
+	        <li class="item">
+	          Duck Tales
+	        </li>
+	        <li class="item">
+	          Mega Man
+	        </li>
+	        <li class="item">
+	          Metroid
+	        </li>
+	        <li class="item">
+	          Mike Tyson's Punch-Out
+	        </li>
+	        <li class="item">
+	          R.C. Pro-Am
+	        </li>
+	        <li class="item">
+	          Spy Hunter
+	        </li>
+	        <li class="item">
+	          Super Mario Bros.
+	        </li>
+	        <li class="item">
+	          The Legend of Zelda
+	        </li>
+
+	      </ul>
+
+	    </div>
+
+	  </div>
+  </div>
+  <script>
+    window.i18next.on('initialized', function () {
+      document.querySelector('#list-items').innerHTML = window.i18next.t('ves-ar-extension:List Items');
+      document.querySelector('#create-button').innerHTML = window.i18next.t('Create');
+      document.querySelector('#float-labels').innerHTML = window.i18next.t('ves-ar-extension:Floating Labels');
+      document.querySelector('#buttons').innerHTML = window.i18next.t('ves-ar-extension:Buttons');
+      document.querySelector('#input-email').setAttribute('placeholder', window.i18next.t('ves-ar-extension:Email'));
+      document.querySelector('#first-name').setAttribute('placeholder', window.i18next.t('ves-ar-extension:First Name'));
+      document.querySelector('#last-name').setAttribute('placeholder', window.i18next.t('ves-ar-extension:Last Name'));
+    });
+  </script>
+</body>
+</html>

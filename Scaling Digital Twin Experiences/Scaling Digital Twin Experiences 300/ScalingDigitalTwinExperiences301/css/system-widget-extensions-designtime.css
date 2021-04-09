@@ -1,0 +1,1223 @@
+@charset "UTF-8";
+.item.date input {
+  width: auto; }
+
+twx-date-input {
+  width: 100%; }
+
+.targetGuide.cloudimage {
+  beckground-color: #FF0000;
+  background-image: url("../extensions/images/cloudimage_phantom.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+.targetGuide.imagemark .bracket-top-left, .targetGuide.imagemark .bracket-top-right, .targetGuide.imagemark .bracket-bottom-right, .targetGuide.imagemark .bracket-bottom-left {
+  border: solid 3px #6fb449;
+  position: absolute;
+  width: calc((8vw + 8vh) / 2);
+  height: calc((8vw + 8vh) / 2); }
+
+.targetGuide.imagemark .bracket-top-left {
+  top: 6vh;
+  left: 8vw;
+  border-right: none;
+  border-bottom: none; }
+
+.targetGuide.imagemark .bracket-top-right {
+  top: 6vh;
+  right: 8vw;
+  border-left: none;
+  border-bottom: none; }
+
+.targetGuide.imagemark .bracket-bottom-right {
+  bottom: 6vh;
+  right: 8vw;
+  border-left: none;
+  border-top: none; }
+
+.targetGuide.imagemark .bracket-bottom-left {
+  bottom: 6vh;
+  left: 8vw;
+  border-right: none;
+  border-top: none; }
+
+twx-dt-image {
+  display: none; }
+
+.has-statedef-styles .basic-3d-state-formatting {
+  color: var(--foregroundColor);
+  --text-stroke-color: var(--secondaryBackgroundColor);
+  background-color: var(--backgroundColor);
+  border-style: var(--lineStyle);
+  border-width: var(--lineThickness);
+  border-color: var(--lineColor);
+  font-style: var(--fontEmphasisItalic);
+  font-weight: var(--fontEmphasisBold);
+  text-decoration: var(--fontEmphasisUnderline);
+  background: var(--backgroundColor); }
+
+twx-dt-label {
+  color: black;
+  --text-stroke-color: rgba(255, 255, 255, 1);
+  display: none; }
+
+twx-dt-sensor {
+  font: 40px Arial; }
+
+.has-statedef-styles twx-dt-sensor {
+  color: var(--foregroundColor);
+  --text-stroke-color: var(--secondaryBackgroundColor);
+  background-color: var(--backgroundColor);
+  font-style: var(--fontEmphasisItalic);
+  font-weight: var(--fontEmphasisBold);
+  text-decoration: var(--fontEmphasisUnderline); }
+
+twx-dt-view {
+  position: inherit;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: auto; }
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  100% {
+    transform: scaleX(1); } }
+
+.targetGuide {
+  -webkit-transition: opacity ease-in-out 0.75s;
+  transition: opacity ease-in-out 0.75s;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+  .targetGuide.ng-hide {
+    opacity: 0;
+    animation-name: pulse; }
+
+.targetGuide {
+  content: "";
+  /* iOS11.0 uses const, iOS11.2 uses env */
+  width: calc(100vw - (const(safe-area-inset-left) + const(safe-area-inset-right)));
+  width: calc(100vw - (env(safe-area-inset-left) + env(safe-area-inset-right)));
+  height: 100vh;
+  position: absolute;
+  display: table;
+  margin: auto auto;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .targetGuide.imagemark {
+    background-size: contain; }
+  .targetGuide.thingmark {
+    background-image: url("../src/phone/resources/Default/thing_code_phantom.png"); }
+  .targetGuide.imageTarget .targetGuideText.hint {
+    padding-top: 0; }
+  .targetGuide.imageTarget .bracket-top-left {
+    border: solid 3px #6fb449;
+    position: absolute;
+    width: calc((8vw + 8vh) / 2);
+    height: calc((8vw + 8vh) / 2);
+    top: 6vh;
+    left: 8vw;
+    border-right: none;
+    border-bottom: none; }
+  .targetGuide.imageTarget .bracket-top-right {
+    border: solid 3px #6fb449;
+    position: absolute;
+    width: calc((8vw + 8vh) / 2);
+    height: calc((8vw + 8vh) / 2);
+    top: 6vh;
+    right: 8vw;
+    border-left: none;
+    border-bottom: none; }
+  .targetGuide.imageTarget .bracket-bottom-right {
+    border: solid 3px #6fb449;
+    position: absolute;
+    width: calc((8vw + 8vh) / 2);
+    height: calc((8vw + 8vh) / 2);
+    bottom: 6vh;
+    right: 8vw;
+    border-left: none;
+    border-top: none; }
+  .targetGuide.imageTarget .bracket-bottom-left {
+    border: solid 3px #6fb449;
+    position: absolute;
+    width: calc((8vw + 8vh) / 2);
+    height: calc((8vw + 8vh) / 2);
+    bottom: 6vh;
+    left: 8vw;
+    border-right: none;
+    border-top: none; }
+
+.platform-edge .targetGuide {
+  width: 100vw; }
+
+.targetGuideText {
+  width: 100vw;
+  display: table-cell;
+  margin: auto auto;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  pointer-events: none; }
+  .targetGuideText.hint {
+    padding-top: 220px;
+    /* move the text below the hexagon */ }
+
+/* adjust height for top nav bar as .leftmenu .twx-2d-overlay */
+.leftmenu .targetGuide {
+  height: calc(100vh - 44px); }
+
+twx-dt-view {
+  position: inherit;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: auto; }
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  100% {
+    transform: scaleX(1); } }
+
+.targetGuide {
+  -webkit-transition: opacity ease-in-out 0.75s;
+  transition: opacity ease-in-out 0.75s;
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+  .targetGuide.ng-hide {
+    opacity: 0;
+    animation-name: pulse; }
+
+.targetGuide.vumark {
+  background-image: url(../extensions/images/vumarkTarget.png); }
+
+.scan-content {
+  height: 100vh;
+  padding: 16px;
+  width: 100vw;
+  position: absolute;
+  top: 0; }
+  .scan-content.runtime {
+    pointer-events: none; }
+    .scan-content.runtime div {
+      pointer-events: none; }
+  .scan-content .scan-mask {
+    background: transparent;
+    border-style: solid;
+    border-color: #000000;
+    border-bottom-width: 30vh;
+    border-left-width: 8vw;
+    border-right-width: 8vw;
+    border-top-width: 30vh;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    z-index: 1; }
+  .scan-content .scan-elements {
+    height: 100%;
+    position: relative;
+    z-index: 2; }
+    .scan-content .scan-elements .scan-message {
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      width: 100%; }
+    .scan-content .scan-elements .scan-line {
+      background-color: #67b730;
+      box-shadow: 0px 0px 40px 20px rgba(103, 183, 48, 0.4);
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 50%; }
+    .scan-content .scan-elements .scan-exit-button {
+      background-color: transparent;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: none;
+      bottom: 16px;
+      cursor: pointer;
+      height: 22px;
+      position: absolute;
+      width: 100%; }
+
+.is2DWidgetContent {
+  height: 0 !important; }
+
+twx-barcode-scanner.active .widget-help-box {
+  border: 1px dashed #5bb73b; }
+
+.barcode-scanner.widget-help-popup {
+  left: 10vw;
+  width: 80vw; }
+
+twx-barcode-scanner[twx-widget].active:after {
+  border: none; }
+
+.twxChalk {
+  display: inline-block;
+  text-decoration: none;
+  color: #6dbd52; }
+  .twxChalk a {
+    text-decoration: none;
+    color: #6dbd52; }
+  .twxChalk.horizontal .twxChalkText {
+    display: block;
+    float: left;
+    line-height: 48px;
+    padding-left: 10px; }
+  .twxChalk.horizontal .twxChalkIcon {
+    float: left; }
+  .twxChalk.vertical {
+    text-align: center; }
+    .twxChalk.vertical .twxChalkText {
+      display: block;
+      line-height: 18px;
+      padding-top: 5px; }
+    .twxChalk.vertical .twxChalkIcon {
+      margin: 0 auto; }
+
+.twxChalkIcon {
+  background: url("../extensions/images/Chalk.svg");
+  background-repeat: no-repeat;
+  background-color: #6dbd52;
+  background-position: center center;
+  display: block;
+  height: 48px;
+  width: 48px; }
+
+just-gage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 8px;
+  /*match the padding of the original widget with the sizing bug */ }
+  just-gage div[id^="gauge"] {
+    display: none; }
+  just-gage svg {
+    max-width: 100vw;
+    max-height: calc(100vh - 49px);
+    /* 49px is the size of the title bar */ }
+
+[original-widget="twx-gauge"].has-statedef-styles .gage-container {
+  border: var(--lineThickness) var(--lineStyle) var(--lineColor); }
+
+[original-widget="twx-gauge"] {
+  width: 100%;
+  height: 100%; }
+
+[scrollable="true"][original-widget="twx-list"] {
+  display: flex;
+  width: 100%; }
+  [scrollable="true"][original-widget="twx-list"] twx-widget-content {
+    width: 100%;
+    display: flex; }
+  [scrollable="true"][original-widget="twx-list"] ion-list {
+    flex: 1;
+    pointer-events: auto;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+
+ion-item.selected {
+  background-color: #f5f5f5;
+  color: #272B30; }
+
+[view-type="ar"] .scroll {
+  height: 100%; }
+
+twx-overlay {
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; }
+
+twx-overlay-container {
+  display: block; }
+
+twx-overlay-container[data-position="top"], twx-overlay-container[data-position="bottom"] {
+  min-height: 44px; }
+
+twx-overlay > .twx-container-content {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column; }
+  twx-overlay > .twx-container-content twx-overlay-body {
+    display: flex !important;
+    flex-direction: row;
+    flex: 1;
+    width: 100%; }
+    twx-overlay > .twx-container-content twx-overlay-body > .twx-container-content {
+      width: 100%;
+      display: flex; }
+      twx-overlay > .twx-container-content twx-overlay-body > .twx-container-content twx-overlay-container[data-position="left"], twx-overlay > .twx-container-content twx-overlay-body > .twx-container-content twx-overlay-container[data-position="right"] {
+        flex: 0 0 100px; }
+      twx-overlay > .twx-container-content twx-overlay-body > .twx-container-content twx-overlay-container[data-position="center"] {
+        flex: 1; }
+
+[original-widget="twx-overlay"] {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.twx-2d-overlay {
+  height: 100%; }
+  .twx-2d-overlay twx-container-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  .twx-2d-overlay .panel {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
+    .twx-2d-overlay .panel.top {
+      min-height: 44px; }
+    .twx-2d-overlay .panel.bottom {
+      min-height: 44px; }
+    .twx-2d-overlay .panel.body {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      width: 100%; }
+    .twx-2d-overlay .panel.left, .twx-2d-overlay .panel.right {
+      flex: 0 0 100px; }
+    .twx-2d-overlay .panel.center {
+      flex: 1; }
+
+.overlay {
+  position: absolute;
+  top: 84px;
+  bottom: 124px;
+  right: 40px;
+  left: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 3px #f2f2f2;
+  z-index: 10; }
+
+.camera-reticle-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: 100; }
+  .camera-reticle-container .camera-reticle {
+    display: flex;
+    margin: auto auto;
+    width: calc((30vw + 30vh) / 2);
+    height: calc((30vw + 30vh) / 2);
+    position: relative;
+    pointer-events: none; }
+    .camera-reticle-container .camera-reticle .bracket-top-left {
+      border: solid calc((1vw + 1vh) / 2) #6fb449;
+      position: absolute;
+      width: calc((30vw + 30vh) / 8);
+      height: calc((30vw + 30vh) / 8);
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      border-right: none;
+      border-bottom: none; }
+    .camera-reticle-container .camera-reticle .bracket-top-right {
+      border: solid calc((1vw + 1vh) / 2) #6fb449;
+      position: absolute;
+      width: calc((30vw + 30vh) / 8);
+      height: calc((30vw + 30vh) / 8);
+      pointer-events: none;
+      top: 0;
+      right: 0;
+      border-left: none;
+      border-bottom: none; }
+    .camera-reticle-container .camera-reticle .bracket-bottom-right {
+      border: solid calc((1vw + 1vh) / 2) #6fb449;
+      position: absolute;
+      width: calc((30vw + 30vh) / 8);
+      height: calc((30vw + 30vh) / 8);
+      pointer-events: none;
+      bottom: 0;
+      right: 0;
+      border-left: none;
+      border-top: none; }
+    .camera-reticle-container .camera-reticle .bracket-bottom-left {
+      border: solid calc((1vw + 1vh) / 2) #6fb449;
+      position: absolute;
+      width: calc((30vw + 30vh) / 8);
+      height: calc((30vw + 30vh) / 8);
+      pointer-events: none;
+      bottom: 0;
+      left: 0;
+      border-right: none;
+      border-top: none; }
+    .camera-reticle-container .camera-reticle .camera-reticle-text {
+      font-size: calc((10vh + 10vw) / 2);
+      margin: auto;
+      color: #6fb449; }
+
+.camera-confirmation-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 100; }
+  .camera-confirmation-overlay .button-overlay {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 5vh;
+    left: 0; }
+    .camera-confirmation-overlay .button-overlay > div {
+      display: flex; }
+    .camera-confirmation-overlay .button-overlay button {
+      border: none;
+      width: calc(100vw / 5);
+      min-width: min(100px, calc(100vw / 3));
+      height: calc((11vh + 11vw) / 2);
+      max-height: 60px;
+      color: white;
+      font-size: 16px; }
+    .camera-confirmation-overlay .button-overlay .--reject {
+      background-color: #FE0000; }
+    .camera-confirmation-overlay .button-overlay .--retake {
+      background-color: #595959; }
+    .camera-confirmation-overlay .button-overlay .--accept {
+      background-color: #70AD46; }
+  .camera-confirmation-overlay .preview-image-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #6e717c; }
+    .camera-confirmation-overlay .preview-image-container > img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto; }
+
+.take-screenshot-flash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: #ffffff;
+  z-index: 10;
+  visibility: visible;
+  pointer-events: none; }
+
+.take-screenshot-flash-fade {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s ease; }
+
+.twx-view-overlay {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100vw;
+  height: 102vh; }
+
+twx-view-footer {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  height: 44px; }
+  twx-view-footer .footer > .twx-container-content {
+    width: 100%; }
+  twx-view-footer .footer {
+    border-top: 1px solid #ddd; }
+
+.chart-placeholder {
+  height: 186px;
+  background: #fafafa;
+  margin: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .chart-placeholder .chart-placeholder-text {
+    color: #ccc;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 40px; }
+
+.button {
+  margin: 0px; }
+
+.card {
+  min-height: 40px; }
+
+[scrollable="true"][original-widget="twx-card"],
+[data-scrollable="true"][original-widget="twx-card"] {
+  display: flex;
+  width: 100%; }
+  [scrollable="true"][original-widget="twx-card"] twx-widget-content,
+  [data-scrollable="true"][original-widget="twx-card"] twx-widget-content {
+    width: 100%;
+    display: flex; }
+  [scrollable="true"][original-widget="twx-card"] .card,
+  [data-scrollable="true"][original-widget="twx-card"] .card {
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+
+.card.has-header-footer > twx-container-content {
+  height: auto; }
+
+.row .col {
+  -webkit-display: flex;
+  display: flex;
+  overflow: hidden; }
+
+.data-grid-col {
+  min-width: 75px;
+  min-height: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  flex: 1 1 auto; }
+
+/* this selector is not nested in the ".twx-data-grid" selector below because it was making the
+   the td-design-mode more specific than a user defined class in design time, we want the user
+   defined class to override the OOTB CSS properties */
+.td-design-mode {
+  /* any properties added, changed, or removed should be added/changed/removed to the ".twx-data-grid th/td" blocks below */
+  background: #ffffff;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.54;
+  height: 56px;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 24px; }
+
+.twx-data-grid {
+  width: 100%;
+  border-collapse: collapse; }
+  .twx-data-grid th {
+    background: #ffffff;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.54;
+    height: 56px; }
+  .twx-data-grid td,
+  .twx-data-grid th {
+    border-bottom: 1px solid #ddd;
+    padding: 0px 24px;
+    text-align: left;
+    vertical-align: middle; }
+    .twx-data-grid td.left,
+    .twx-data-grid th.left {
+      text-align: left; }
+    .twx-data-grid td.center,
+    .twx-data-grid th.center {
+      text-align: center; }
+    .twx-data-grid td.right,
+    .twx-data-grid th.right {
+      text-align: right; }
+    .twx-data-grid td.top,
+    .twx-data-grid th.top {
+      vertical-align: top; }
+    .twx-data-grid td.middle,
+    .twx-data-grid th.middle {
+      vertical-align: middle; }
+    .twx-data-grid td.bottom,
+    .twx-data-grid th.bottom {
+      vertical-align: bottom; }
+  .twx-data-grid .item-row:hover {
+    background-color: #eeeeee; }
+  .twx-data-grid .item-row.selected, .twx-data-grid .item-row:active {
+    background-color: #f5f5f5; }
+  .twx-data-grid td {
+    height: 48px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.87; }
+
+.twx-data-grid.design-time {
+  border: 1px dashed #ddd;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  min-height: 50px; }
+  .twx-data-grid.design-time .top .twx-container-content {
+    vertical-align: top; }
+  .twx-data-grid.design-time .middle .twx-container-content {
+    vertical-align: middle; }
+  .twx-data-grid.design-time .bottom .twx-container-content {
+    vertical-align: bottom; }
+  .twx-data-grid.design-time .left .twx-container-content {
+    text-align: left; }
+  .twx-data-grid.design-time .center .twx-container-content {
+    text-align: center; }
+  .twx-data-grid.design-time .right .twx-container-content {
+    text-align: right; }
+  .twx-data-grid.design-time .twx-container-content {
+    height: 48px;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.87;
+    display: table-cell;
+    padding: 0 24px; }
+  .twx-data-grid.design-time .twx-repeater-content {
+    display: flex;
+    flex-direction: row; }
+  .twx-data-grid.design-time .data-grid-td {
+    display: table;
+    min-width: 77px;
+    width: 100%; }
+  .twx-data-grid.design-time .data-grid-th {
+    display: table;
+    height: 56px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    text-align: left; }
+    .twx-data-grid.design-time .data-grid-th label {
+      display: table-cell;
+      padding: 0 24px;
+      vertical-align: middle; }
+    .twx-data-grid.design-time .data-grid-th.left {
+      text-align: left; }
+    .twx-data-grid.design-time .data-grid-th.center {
+      text-align: center; }
+    .twx-data-grid.design-time .data-grid-th.right {
+      text-align: right; }
+    .twx-data-grid.design-time .data-grid-th.top {
+      vertical-align: top; }
+    .twx-data-grid.design-time .data-grid-th.middle {
+      vertical-align: middle; }
+    .twx-data-grid.design-time .data-grid-th.bottom {
+      vertical-align: bottom; }
+
+/* this selector is not nested in the ".twx-data-grid" selector because it was making the
+   the data-grid-th class be more specific than a user defined class in design time, we want the user
+   defined class to override the OOTB CSS properties */
+.data-grid-th {
+  background: #ffffff;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.54; }
+
+.twx-data-grid .item-row.has-statedef-styles:not(.selected):not(:hover):not(:active) {
+  background-color: var(--backgroundColor);
+  background: linear-gradient(var(--backgroundColor), var(--secondaryBackgroundColor));
+  border: var(--lineThickness) var(--lineStyle) var(--lineColor); }
+  .twx-data-grid .item-row.has-statedef-styles:not(.selected):not(:hover):not(:active) > td {
+    color: var(--foregroundColor);
+    font-style: var(--fontEmphasisItalic);
+    font-weight: var(--fontEmphasisBold);
+    text-decoration: var(--fontEmphasisUnderline);
+    font-size: var(--textSize); }
+
+.twx-data-grid td.has-statedef-styles.basic-state-formatting {
+  border-bottom: var(--lineThickness, 1px) var(--lineStyle, solid) var(--lineColor, #ddd); }
+
+.twx-fragment {
+  overflow: auto;
+  display: flex;
+  flex: 1;
+  padding: 5px; }
+  .twx-fragment twx-container-content {
+    flex: 1;
+    display: flex; }
+
+[original-widget="twx-fragment"] {
+  display: flex; }
+  [original-widget="twx-fragment"] twx-widget-content {
+    display: flex;
+    flex: 1; }
+
+twx-widget-property {
+  display: none !important; }
+
+#canvas-contents twx-fragment {
+  min-height: 45px;
+  display: flex;
+  flex: 1; }
+  #canvas-contents twx-fragment .twx-fragment {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    border: 1px dashed #ddd; }
+
+#canvas-contents .ui-droppable-hover .twx-fragment {
+  overflow: visible; }
+
+.twx-fragment-panel {
+  overflow: auto;
+  width: 100%;
+  height: 100%; }
+
+/*design-time*/
+twx-gridlayout[even-rows="true"] {
+  height: 100%; }
+  twx-gridlayout[even-rows="true"] .twx-grid-designer {
+    height: 100%; }
+    twx-gridlayout[even-rows="true"] .twx-grid-designer > .twx-container-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      twx-gridlayout[even-rows="true"] .twx-grid-designer > .twx-container-content twx-row {
+        flex: 1; }
+
+/*run-time*/
+[original-widget="twx-gridlayout"] {
+  width: 100%; }
+  [original-widget="twx-gridlayout"].hasEvenlySpacedRows {
+    height: 100%;
+    display: flex;
+    flex: 1; }
+    [original-widget="twx-gridlayout"].hasEvenlySpacedRows twx-widget-content {
+      display: flex;
+      flex: 1; }
+    [original-widget="twx-gridlayout"].hasEvenlySpacedRows .gridLayout {
+      width: 100%; }
+
+.gridLayout {
+  width: 100%; }
+  .gridLayout .row {
+    padding: 0; }
+  .gridLayout .row + .row {
+    padding-top: 5px; }
+
+ion-view[hasgridevenrows="true"] ion-content .scroll {
+  height: 100% !important; }
+
+ion-view[hasgridevenrows="true"] ion-content .gridLayout twx-container-content .row {
+  flex: 1; }
+
+.gridLayout[even-rows="true"] {
+  height: auto;
+  flex: 1;
+  display: flex; }
+  .gridLayout[even-rows="true"] twx-container-content {
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    display: flex; }
+  .gridLayout[even-rows="true"] .row {
+    flex: 1 0 auto;
+    align-items: stretch;
+    flex-direction: row; }
+
+.twx-2d-overlay .gridLayout,
+.twx-2d-overlay .gridLayout > twx-container-content,
+.twx-2d-overlay .gridLayout .row,
+.twx-2d-overlay .gridLayout .col {
+  pointer-events: none; }
+
+.twxHyperlink {
+  display: inline-block;
+  margin: 0px; }
+
+a {
+  pointer-events: all; }
+
+twx-image2 {
+  display: block; }
+
+.img-placeholder {
+  height: 40px;
+  opacity: .5; }
+
+.imgAlignContainer {
+  display: flex;
+  align-items: flex-start; }
+  .imgAlignContainer > img {
+    background-color: transparent; }
+
+twx-image {
+  display: block; }
+
+.img-placeholder {
+  height: 40px;
+  opacity: .5; }
+
+.xsmall {
+  font-size: 0.5em; }
+
+.small {
+  font-size: 0.75em; }
+
+.medium {
+  font-size: 1em; }
+
+.large {
+  font-size: 1.5em; }
+
+.xlarge {
+  font-size: 2em; }
+
+[original-widget="twx-label"] {
+  display: inline-block; }
+
+.labelWidget {
+  display: block;
+  padding: 0px; }
+  .labelWidget:empty {
+    display: none; }
+  .labelWidget.noWrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+
+twx-label span {
+  display: inline-block; }
+
+.mapContainer {
+  min-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: url(/extensions/images/map.jpg) no-repeat;
+  background-size: cover; }
+
+.angular-google-map {
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+
+.mapSpinner {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto; }
+
+.angular-google-map-container {
+  height: 100%; }
+
+.twx-panel {
+  overflow: auto;
+  display: flex;
+  flex: 1;
+  padding: 5px; }
+  .twx-panel twx-container-content {
+    flex: 1;
+    display: flex; }
+
+[original-widget="twx-panel"] {
+  display: flex; }
+  [original-widget="twx-panel"] > twx-widget-content {
+    display: flex;
+    flex: 1; }
+
+twx-widget-property {
+  display: none !important; }
+
+#canvas-contents twx-panel {
+  min-height: 45px;
+  display: flex;
+  flex: 1; }
+  #canvas-contents twx-panel .twx-panel {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    border: 1px dashed #ddd; }
+
+.twx-2d-overlay .twx-panel {
+  pointer-events: none; }
+  .twx-2d-overlay .twx-panel::-webkit-scrollbar {
+    pointer-events: auto; }
+
+#canvas-contents .ui-droppable-hover .twx-panel {
+  overflow: visible; }
+
+.twx-popup-container.hidden {
+  display: none; }
+
+.twx-popup {
+  overflow: auto;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-top: 0px;
+  padding: 5px; }
+  .twx-popup twx-container-content {
+    width: 100%; }
+
+.hasHeaderShowing .twx-popup {
+  margin-top: 44px; }
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+twx-widget-property {
+  display: none !important; }
+
+#canvas-contents twx-popup:after {
+  display: none; }
+
+#canvas-contents twx-popup .twx-popup {
+  position: fixed;
+  z-index: 100;
+  min-height: 45px;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  border: 1px dashed #ddd;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  flex-direction: column; }
+
+/* begin copyright text
+ *
+ * Copyright © 2016 PTC Inc., Its Subsidiary Companies, and /or its Partners. All Rights Reserved.
+ *
+ * end copyright text
+ */
+.range input,
+.card .item.range {
+  width: 100%;
+  min-width: 80px; }
+
+.range input::-ms-tooltip {
+  display: none; }
+
+.repeater {
+  display: flex;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch; }
+  .repeater.selection .selected {
+    border: 1px solid #39F; }
+
+.repeater-cell {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  overflow: hidden;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  padding: 0px;
+  margin: 0px; }
+  .repeater-cell:last-child {
+    border: none; }
+  .repeater-cell .item {
+    flex: 1; }
+
+.repeater-cell .repeater-cell {
+  margin-bottom: 10px;
+  margin-right: 60px; }
+
+.gridLayout .repeater {
+  padding: 0; }
+
+[scrollable="true"][original-widget="twx-repeater"] {
+  display: flex;
+  width: 100%; }
+  [scrollable="true"][original-widget="twx-repeater"] twx-widget-content {
+    width: 100%;
+    display: flex; }
+  [scrollable="true"][original-widget="twx-repeater"] .repeater {
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+
+twx-row {
+  display: flex;
+  flex-direction: row; }
+
+.item-select {
+  min-height: 50px; }
+
+twx-tab {
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+  padding: 0px; }
+
+/*design time*/
+twx-tab-designer {
+  width: 100%;
+  padding: 0px; }
+
+.twx-tabs {
+  display: flex;
+  padding: 0px; }
+  .twx-tabs.horizontal {
+    flex-direction: column; }
+  .twx-tabs.vertical .tabs-strip {
+    flex-direction: column;
+    width: 250px;
+    flex: 0 0 250px; }
+    .twx-tabs.vertical .tabs-strip .tab-strip-item {
+      width: 100%; }
+  .twx-tabs.vertical .button-bar .button {
+    border-width: 1px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 0;
+    -ms-flex: 0 1 0;
+    flex: 0 1 0; }
+  .twx-tabs.vertical .button-bar > .button {
+    border-bottom-width: 0px; }
+  .twx-tabs.vertical .button-bar > .button:last-child {
+    border-bottom-width: 1px; }
+  .twx-tabs.vertical .tab-content {
+    flex: 1;
+    margin-top: 1px; }
+
+twx-tabs .twx-tabs-designer {
+  padding: 0px; }
+  twx-tabs .twx-tabs-designer.vertical {
+    display: flex; }
+    twx-tabs .twx-tabs-designer.vertical .tab-strip {
+      flex-direction: column;
+      width: 250px;
+      flex: 0 0 250px; }
+      twx-tabs .twx-tabs-designer.vertical .tab-strip .tab-strip-item {
+        flex: 1;
+        width: 100%; }
+      twx-tabs .twx-tabs-designer.vertical .tab-strip .button {
+        border-width: 1px; }
+      twx-tabs .twx-tabs-designer.vertical .tab-strip > .button {
+        border-bottom-width: 0px; }
+      twx-tabs .twx-tabs-designer.vertical .tab-strip > .button:last-child {
+        border-bottom-width: 1px; }
+    twx-tabs .twx-tabs-designer.vertical .tab-content {
+      flex: 1;
+      margin-top: 1px; }
+
+#canvas-contents twx-tabs {
+  display: block; }
+
+.twxTextArea textarea {
+  display: block;
+  resize: none;
+  width: 100%; }
+
+.chart-placeholder {
+  height: 186px;
+  background: #fafafa;
+  margin: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .chart-placeholder .chart-placeholder-text {
+    color: #ccc;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 40px; }
+
+.chart-size {
+  max-height: 75vh;
+  max-width: 75vw; }
+
+twx-toolbar {
+  display: block; }
+
+video {
+  width: 100%; }
+
+.valuedisplay-value-kpi {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1em; }
+
+.valuedisplay-value {
+  color: #aaa; }
+
+.card .valuedisplay-container.inlinelabel {
+  width: 100%; }
+
+[original-widget="twx-valuedisplay"].has-statedef-styles .item-note {
+  color: var(--foregroundColor);
+  font-style: var(--fontEmphasisItalic);
+  font-weight: var(--fontEmphasisBold);
+  text-decoration: var(--fontEmphasisUnderline);
+  font-size: var(--textSize); }
+
+[original-widget="twx-valuedisplay"].has-statedef-styles.hasImage .item-note:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: var(--image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: 2px;
+  left: -2px;
+  position: relative; }
+
+.seeflowElement {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.seeflowWidget {
+  margin: auto;
+  width: 198px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: #DDDDDD;
+  padding: 3px;
+  opacity: 0.5; }
+
+.seereflectionElement {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.seereflectionWidget {
+  margin: auto;
+  width: 198px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: #DDDDDD;
+  padding: 3px;
+  opacity: 0.5; }
+
+.seethroughElement {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.seethroughWidget {
+  margin: auto;
+  width: 198px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: #DDDDDD;
+  padding: 3px;
+  opacity: 0.5; }
+
+.seeinsideElement {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.seeinsideWidget {
+  margin: auto;
+  width: 198px;
+  height: 54px;
+  border-radius: 5px;
+  background-color: #DDDDDD;
+  padding: 3px;
+  opacity: 0.5; }

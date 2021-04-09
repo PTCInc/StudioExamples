@@ -1,0 +1,190 @@
+ion-footer-bar{
+        background-color:#000;
+}
+
+.seethrough {
+  background-color: rgba(255,255,255,0) !important; /* or transparent, or background:none */
+}
+
+ion-side-menu .item .word-button{
+    top: 12px;
+    right: 10px;
+    min-height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    height: auto;
+}
+.icon.download-available{
+    background-image: url(../img/download.png);
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    top: 14px;
+}
+.icon.tw-app{
+    background-image: url(../img/tw-icon-outline.png);
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    top: 14px;
+}
+ion-side-menu .item .right-spinner{
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 12px;
+}
+ion-side-menu .item .progress{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    font-size: 10px;
+    text-align: center;
+    width: 20px;
+}
+
+twx-widget {
+    position: relative;
+    vertical-align: top;
+}
+
+ion-view[view-type="ar"] {
+    background-color: rgba(255,255,255,0) !important; /* or transparent, or background:none */
+}
+
+ion-side-menus.view {
+    /* iOS11.0 uses const, iOS11.2 used env */
+    left: constant(safe-area-inset-left);
+    left: env(safe-area-inset-left);
+    width: calc(100vw - (constant(safe-area-inset-left) + constant(safe-area-inset-right)));
+    width: calc(100vw - (env(safe-area-inset-left) + env(safe-area-inset-right)));
+}
+
+ion-nav-view.view-container {
+    /* iOS11.0 uses const, iOS11.2 used env */
+    height: calc(100vh - constant(safe-area-inset-bottom));
+    height: calc(100vh - env(safe-area-inset-bottom));
+}
+
+.leftmenu .twx-2d-overlay {
+    height: calc(100vh - 44px);
+    padding-top: constant(safe-area-inset-bottom);
+    padding-top: env(safe-area-inset-bottom);
+}
+
+.twx-2d-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.twx-2d-overlay,
+div.panel
+{
+    pointer-events: none;
+}
+
+.item,
+button,
+input,
+span,
+img,
+.clickable-item,
+twx-container-content twx-widget div
+{
+    pointer-events: auto;
+}
+
+.has-statedef-styles .basic-state-formatting,
+.has-statedef-styles.basic-state-formatting,
+.has-statedef-styles.basic-state-formatting > twx-widget-content > .item {
+    color: var(--foregroundColor);
+    background-color: var(--backgroundColor);
+    border: var(--lineThickness) var(--lineStyle) var(--lineColor);
+    font-style: var(--fontEmphasisItalic);
+    font-weight: var(--fontEmphasisBold);
+    text-decoration: var(--fontEmphasisUnderline);
+    font-size: var(--textSize);
+    background: linear-gradient(var(--backgroundColor), var(--secondaryBackgroundColor));
+}
+
+.hasImage .basic-state-formatting-image:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: var(--image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: 2px;
+    left: -2px;
+    position: relative;
+}
+
+[nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
+    background-color: none;
+}
+
+@keyframes slideInEffect {
+    from {
+        top: 100%;
+    }
+    25% {
+        top: calc(100% - 50px);
+    }
+    to {
+        top: calc(100% - 50px);
+    }
+}
+
+#snackbar {
+    background-color: #000000;
+    color: #ffffff;
+    min-width: 200px;
+    max-width: 550px;
+    font-size: 14px;
+    display: table;
+    padding: 0;
+    border-radius: 0;
+    top: 100%;
+    animation-iteration-count: 2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-name: slideInEffect;
+    position: relative;
+    margin: auto;
+    padding: 14px 18px;
+}
+
+#snackbar .content {
+    line-height: 14px;
+}
+
+#snackbar .content.icon {
+    background: left center no-repeat;
+    background-size: 24px 100%;
+    padding-left: 28px;
+}
+
+#snackbar.hide {
+    display: none;
+}
+
+#ptcVoiceCommands {
+  opacity: 0.01;
+  width: 1px;
+  height: 1px;
+}
+
+#ptcVoiceCommands,
+#ptcVoiceCommands button {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: inline;
+}
+
+.iconClose {
+  background-image: url(../img/iconClose.svg);
+}

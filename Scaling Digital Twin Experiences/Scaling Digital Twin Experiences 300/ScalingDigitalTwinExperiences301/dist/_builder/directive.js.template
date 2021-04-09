@@ -1,0 +1,10 @@
+var ngModule = angular.module('<%= appName =%>', []);
+
+ngModule.directive('<%= directiveName =%>', [function () {
+  return {
+    templateUrl: '<%= templateUrl =%>',
+    controllerAs: 'ctrl',
+    controller: function () {
+    }
+  }
+}]);

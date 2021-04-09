@@ -1,0 +1,92 @@
+#app-events {
+    border: 1px solid #ccc;
+    position: fixed;
+    right: 0;
+    pointer-events: all;
+    margin: 20px;
+    color: #333333;
+    width: 270px;
+    z-index: 100;
+    font-size: 12px;
+}
+#app-events .header {
+    background-color: #d2d4d9;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 0 10px;
+}
+#app-events .contents {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow-y: auto;
+    max-height: 85vh;
+}
+#app-events .contents::-webkit-scrollbar {
+    background-color: #f2f2f2;
+    width: 10px;
+}
+#app-events .contents::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+
+}
+#app-events .contents::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+#app-events .contents:hover::-webkit-scrollbar-thumb {
+    background-color: #8fd378;
+    opacity: 1;
+}
+#app-events .app-event, #app-events .empty-app-events {
+    flex: 1;
+    padding: 5px 29px;
+}
+#app-events .app-event {
+    background-image: url(/extensions/images/play.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 10px center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#app-events .voice-desc {
+    display: none;
+}
+#app-events .voice .voice-desc {
+    display: inline-block;
+    margin-left: 3px;
+}
+#app-events .app-event:hover {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+#app-events .app-event.activated {
+    background-color: #67b730;
+    color: #fff;
+}
+#app-events .iconChevron, #app-events .icon-voice {
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+#app-events .icon-voice {
+    background-image:url(/extensions/images/voice.svg);
+    width: 9px;
+}
+#app-events .iconChevron.expanded {
+    background-image: url(/images/images/iconChevronDownBlue.svg);
+}
+#app-events .iconChevron.collapsed {
+    background-image: url(/images/images/iconChevronRightBlue.svg);
+}
+
+#snackbar .icon.voice-response {
+    background-image: url(/extensions/images/voiceResponse.png);
+}
