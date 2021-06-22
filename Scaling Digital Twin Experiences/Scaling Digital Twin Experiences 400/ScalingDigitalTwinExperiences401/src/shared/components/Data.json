@@ -1,0 +1,58 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "color",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "color",
+        "value": "purple"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "model",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "model",
+        "value": "2"
+      },
+      "name": "twx-app-param"
+    }
+  ],
+  "name": "twx-app-mdl"
+}
