@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "title": {
+    "en": "Quadcopters"
+  },
+  "description": {
+    "en": "Models of various quadcopters for exercise 400"
+  }
+}
