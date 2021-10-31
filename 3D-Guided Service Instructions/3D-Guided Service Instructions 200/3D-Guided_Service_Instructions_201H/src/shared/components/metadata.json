@@ -1,0 +1,39 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "requires": [
+    "holographic",
+    "spatial-tracking"
+  ],
+  "experiences": [
+    {
+      "vumark": "36795:201",
+      "experienceType": "vumark",
+      "id": 1,
+      "index-keys": [
+        "urn:vuforia:vumark:36795:201"
+      ],
+      "title": {
+        "en": "3D-Guided Service Instructions 201H"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Home",
+      "url-template": "index.html?expId=1&vumark={{vuforia:vumark}}",
+      "entryPoint": "index.html?expId=1",
+      "thumbnail": ""
+    }
+  ],
+  "widgetsUsage": [
+   
+  ],
+  "accessType": "public",
+  "designedfor": []
+}

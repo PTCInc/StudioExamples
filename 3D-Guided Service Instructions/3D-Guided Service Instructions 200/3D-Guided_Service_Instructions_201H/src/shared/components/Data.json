@@ -1,0 +1,103 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "name": "doubletap",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "swipeleft",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "swiperight",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "swipeforward",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "swipeback",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "swipeup",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "hold",
+        "isdeletable": "false",
+        "isvoicealiasable": "true"
+      },
+      "name": "twx-app-event"
+    },
+    {
+      "attributes": {
+        "name": "stopscan",
+        "isdeletable": "false",
+        "isvoicealiasable": "true",
+        "voicealias": "Stop Scan"
+      },
+      "name": "twx-app-event"
+    }
+  ],
+  "name": "twx-app-mdl"
+}

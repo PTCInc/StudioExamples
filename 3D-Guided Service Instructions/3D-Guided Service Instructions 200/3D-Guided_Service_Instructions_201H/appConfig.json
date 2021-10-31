@@ -1,0 +1,52 @@
+{
+  "name": "3D-Guided Service Instructions 201H",
+  "projectType": "eyewear",
+  "viewType": "ar",
+  "fileName": "3D-Guided_Service_Instructions_201H",
+  "thingworxServer": "",
+  "viewTemplateFileName": "home-ar-eyewear.json",
+  "mainNavigationMenuStyle": "noMenu",
+  "device": {
+    "name": "eyewear"
+  },
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "fragments": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "1.55.2018"
+}
