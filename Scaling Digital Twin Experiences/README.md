@@ -5,3 +5,6 @@ The Scaling Digital Twin Experiences series focuses on creating configurable, sc
 * Scaling Digital Twin Experiences 300
     - Scaling Digital Twin Experiences 301 - Configurations with ThingWorx and the IRS
     - Scaling Digital Twin Experiences 302 - Configurations and Content Storage with ThingWorx 
+* Scaling Digital Twin Experiences 400
+    - Scaling Digital Twin Experiences 401 - Configurations and Content Storage with the Experience Server
+    - Scaling Digital Twin Experiences 402 - Extending Configurations with the Experience Server
