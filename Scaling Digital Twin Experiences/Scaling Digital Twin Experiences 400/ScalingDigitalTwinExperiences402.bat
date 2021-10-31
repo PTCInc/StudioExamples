@@ -34,6 +34,6 @@
 @rem you will need to edit the project name in this line
 @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{ \"key\":\"urn:curriculum:template:402\", \"value\":\"projects/scalingdigitaltwinexperiences402/index.html?expId=1^&target=^%7B^%7Bcurriculum:target^%7D^%7D^&model=^%7B^%7Bcurriculum:model^%7D^%7D^&vumark=^%7B^%7Bvuforia:vumark^%7D^%7D^&guide=^%7B^%7Bcurriculum:guide^%7D^%7D^&color=^%7B^%7Bcurriculum:color^%7D^%7D\", \"resourcetype\":\"Experience\",\"title\" : { \"en\":\"ScalingDigitalTwinExperiences402\" }, \"requires\" : [ \"AR-tracking\",\"w320dp\"  ], \"description\":{ \"en\":\"Curriculum demo 402\" } }" %server%/ExperienceService/id-resolution/mappings
 
-@rem advanced - use barcodes instead of thingmarks
+@rem advanced - use ean barcodes instead of thingmarks
 @rem @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:epc:id:sgtin:0000000.004025\", \"value\": \"urn:curriculum:config:5\"}" %server%/ExperienceService/id-resolution/mappings
 @rem @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:epc:id:sgtin:0000000.004026\", \"value\": \"urn:curriculum:config:5\"}" %server%/ExperienceService/id-resolution/mappings
