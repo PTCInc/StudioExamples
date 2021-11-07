@@ -71,7 +71,7 @@
                     "twx-widget": "",
                     "widget-id": "dynamicImageTarget",
                     "widget-name": "dynamicImageTarget",
-                    "text": "<twx-dt-target id=\"dynamicimagetarget\"  \nguide-src=\"{{app.params.guidesrc}}\" \nsrc=\"{{app.params.imagesrc}}\"\nx=\"0\" y=\"0\" z=\"0\" \nrx=\"-90\" ry=\"0\" rz=\"0\" \nistracked=\"false\" \n></twx-dt-target>"
+                    "text": "<twx-dt-target id=\"dynamicimagetarget\"  \nguide-src=\"{{app.params.guidesrc}}\" \nsrc=\"{{app.params.imagesrc}}\"\nsize=\"0.28\"\nx=\"0\" y=\"0\" z=\"0\" \nrx=\"-90\" ry=\"0\" rz=\"0\" \nistracked=\"false\" \n></twx-dt-target>"
                   },
                   "name": "twx-tml-text"
                 },
@@ -80,7 +80,7 @@
                     "twx-widget": "",
                     "widget-id": "photo",
                     "widget-name": "photo",
-                    "width": "0.1",
+                    "width": "0.28",
                     "scale": "1.0000",
                     "x": "0.0000",
                     "y": "0.0111",
