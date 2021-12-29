@@ -187,7 +187,7 @@ $scope.hilite = function (items, hilite) {
     //
     //set the properties of the TML 3D Renderer to highlight the selected item using a TML Text shader. "green" is the name of the script for the TML Text.
     tml3dRenderer.setProperties(item, hilite === true ? { shader: "green", hidden: false, opacity: 0.9, phantom: false, decal: true }
-                                                      : { shader: "Default", hidden: false, opacity: 1.0, phantom: false, decal: false });
+                                                      : { shader: "", hidden: false, opacity: 1.0, phantom: false, decal: false });
 
   }) //foreach end
 
