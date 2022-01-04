@@ -35,3 +35,7 @@ div.backdrop.visible.active {
 div.popover-backdrop.active {
   background-color:rgba(0,0,0,0) !important;
 }*/
+
+.popup-container.popup-hidden, .popup-container.active {
+  pointer-events: visible;
+}

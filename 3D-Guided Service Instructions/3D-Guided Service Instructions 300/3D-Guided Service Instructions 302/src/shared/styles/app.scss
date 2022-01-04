@@ -71,3 +71,6 @@
   background: #c8c9c7;
   color: #236192;
 }
+.popup-container.popup-hidden, .popup-container.active {
+  pointer-events: visible;
+}
