@@ -1,0 +1,21 @@
+set vumark1=11075:130
+set vumark2=11075:131
+
+@rem map thingmark1 to config1
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:vuforia:vumark:%vumark1%\", \"value\": \"urn:curriculum:config:30\"}" %server%/ExperienceService/id-resolution/mappings
+@rem map config to params
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:30\", \"value\": \"urn:curriculum:spacename:cxcSpace\"}" %server%/ExperienceService/id-resolution/mappings
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:30\", \"value\": \"urn:curriculum:spaceuri:vuforia-area:////ExperienceService/content/reps/fdte200/targets/CXCFieldZone?id=\"}" %server%/ExperienceService/id-resolution/mappings
+@rem map config to template
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:30\", \"value\": \"urn:curriculum:template:601\"}" %server%/ExperienceService/id-resolution/mappings
+
+@rem and map the template to the experience
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{ \"key\":\"urn:curriculum:template:601\",\"value\":\"projects/templatisedspace/index.html?expId=2^&thing=^%7B^%7Bcurriculum:spacename^%7D^%7D^&spaceURI=^%7B^%7Bcurriculum:spaceuri^%7D^%7D\", \"resourcetype\":\"Experience\",\"title\" : { \"en\":\"welcome to space\" }, \"requires\" : [ \"AR-tracking\",\"w320dp\"  ], \"description\":{ \"en\":\"welcome\" } }" %server%/ExperienceService/id-resolution/mappings
+
+@rem map thingmark2 to config2
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:vuforia:vumark:%vumark2%\", \"value\": \"urn:curriculum:config:31\"}" %server%/ExperienceService/id-resolution/mappings
+@rem map config to params
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:31\", \"value\": \"urn:curriculum:spacename:gamesSpace\"}" %server%/ExperienceService/id-resolution/mappings
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:31\", \"value\": \"urn:curriculum:spaceuri:vuforia-area:////ExperienceService/content/reps/fdte200/targets/games/sgtest?id=\"}" %server%/ExperienceService/id-resolution/mappings
+@rem map config to template
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:curriculum:config:31\", \"value\": \"urn:curriculum:template:601\"}" %server%/ExperienceService/id-resolution/mappings
