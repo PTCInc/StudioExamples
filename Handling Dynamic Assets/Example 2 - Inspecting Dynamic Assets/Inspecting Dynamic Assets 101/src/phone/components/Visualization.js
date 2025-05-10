@@ -1,6 +1,8 @@
-// $scope, $element, $attrs, $injector, $sce, $timeout, $http, $ionicPopup, and $ionicPopover services are available
-
-
+// declare which metadata key (name of property) that we are going to use to drive this experience - in this
+// example, we will use partNumber - we will identify and collect all items with
+// unique partnumber property values, and display these in a way that the experience user
+// can then identify and view content - other property/values - on the selected partNumbered item
+//
 var metadataKey = "partNumber";
 
 // function used in metadata find() call to check for the existence (= present + has a value)
@@ -31,16 +33,19 @@ $scope.$on("modelLoaded", (event, model) => {
               .then  ( (metadata) => { 
   
     
-    // debug - if tyou want to learn what the metadata looks like, try this
+    // debug - if you want to learn what the metadata looks like, try this
     // console.log("my metadata is: \n"+JSON.stringify(metadata, undefined, 2));
     
+    // this function is called from the metadata iterator ifExists that is 
+    // declared above; it will extract all the items with the specified metadata key
+    //
     var getValues = function(idpath) {
       var res  = this.get(idpath, metadataKey);
       var retn = {id:idpath, value: res};
       return retn
     }
   
-    // gets all the items with specific metadata key
+    // get all the items with specific metadata key
     //
     var numbers = ifExists(metadata, metadataKey, getValues);
     
@@ -50,11 +55,12 @@ $scope.$on("modelLoaded", (event, model) => {
       return;
     }
     
+    // we've finished loading the model, so lets hide the UI that was asking uus to wait patiently...
     $scope.view.wdg.loadingPopup.visible = false;
+    // and lets show the the partslist UI, with all the parts we've identified...
     $scope.view.wdg.partsListPopup.visible = true;
     
-	// we want a unique list - use 'set' to generate a unique list
-    //
+    // we want a unique list of numbers - no duplicates - use the javascript 'set' feature to generate a unique list
     let s = new Set(numbers.map((e) => { return e.value; }));
     let parts = [...s];
     
@@ -72,7 +78,8 @@ $scope.$on("modelLoaded", (event, model) => {
   
 })
 
-
+// call this function to highlight the list of selected parts
+//
 var highlightParts = (selectedList, modelId) => {
   
   var highlightedList = [];
@@ -80,7 +87,7 @@ var highlightParts = (selectedList, modelId) => {
   // run over all the items in the list and assign the highlight shader
   selectedList.forEach( (partId) => {
     
-    var renderingPartId = modelId+"-"+partId;
+    var renderingPartId = modelId + "-" + partId;
     var shader = "highlight;r f 1;g f 0.5;b f 0.25;a f 1" + (twx.app.isPreview() ? ";virtualMode f 1.0":"");
     tml3dRenderer.setProperties(renderingPartId, { shader: shader, opacity: 1.0, hidden: false });
    
@@ -93,7 +100,8 @@ var highlightParts = (selectedList, modelId) => {
   return highlightedList;
 }
 
-
+// call this function to clear the highlights
+//
 var highlightReset = (highlightedList) => {
   
   // run over all the items in the list and unsasign the shader
@@ -106,7 +114,7 @@ var highlightReset = (highlightedList) => {
   return [];
 }
 
-
+// used to track which items are highlighted
 $scope.lit = [];
 
 
@@ -122,81 +130,82 @@ $scope.$watch(
   //value == 'currentSelectedPart',
   (value) => {
     
-      highlightReset($scope.lit);
+    highlightReset($scope.lit);
       
-      var partNumber = JSON.parse(value);
+    var partNumber = JSON.parse(value);
         
-        // first of all, lets get all the metadata values for this selected item
-        //
-        var plist = [];
-        PTC.Metadata.fromId(partNumber.model)
-                  .then  ( (metadata) => { 
+    // first of all, lets get all the metadata values for this selected item
+    //
+    var plist = [];
+    PTC.Metadata.fromId(partNumber.model)
+                .then  ( (metadata) => { 
 
-          // find all the items with this partnumber
-          //
-          plist = metadata.find(metadataKey).like(partNumber.name);
+      // find all the items with this partnumber
+      //
+      plist = metadata.find(metadataKey).like(partNumber.name);
           
-          if (plist == undefined)
-          {
-            return;
-          }
+      if (plist == undefined)
+      {
+        return;
+      }
 
-          // highlight those items
-          //
-          $scope.lit = highlightParts(plist.getSelected(), partNumber.model);
+      // highlight those items
+      //
+      $scope.lit = highlightParts(plist.getSelected(), partNumber.model);
           
-          //now find some interesting properties
-          //
-          var interestingProperties = ["cost","supplier","weight","partNumber"]; 
+      // now find some interesting properties
+      //
+      var interestingProperties = ["cost","supplier","weight","partNumber"]; 
 
-          //this function (declared inline) is used to get the property values (see above) for eeach of the items 
-          //in the previously acquired partnmubered plist - it will iterate through each item (idpath) and get the 
-          //properties for each item; if found, they are captured into an array of name=value pairs.
-          //
-          var getInteresting = (ip) => {
-            var ilist = ip;
+      // this function (declared inline) is used to get the property values (see above) for eeach of the items 
+      // in the previously acquired partnmubered plist - it will iterate through each item (idpath) and get the 
+      // properties for each item; if found, they are captured into an array of name=value pairs.
+      //
+      var getInteresting = (ip) => {
+        var ilist = ip;
             
-            return function(idpath) {
-              const res = this.get(idpath, ilist);
-              
-              var retobj = { path:idpath };
-              
-              if (res != undefined && res.length === ilist.length) for (var p=0;p<ilist.length;p++) {
-          
-                // add each result as a new property in the return body  
-                retobj[ilist[p]] = res[p];
-              }
+        return function(idpath) {
+          const res = this.get(idpath, ilist);
 
-              return retobj;
-            }
+          var retobj = { path:idpath };
+              
+          if (res != undefined && res.length === ilist.length) for (var p=0;p<ilist.length;p++) {
+         
+            // add each result as a new property in the return body  
+            retobj[ilist[p]] = res[p];
           }
 
-          // get a list of items with this property set
-          //
-          plist = plist.getSelected(getInteresting(interestingProperties));
+          return retobj;
+        }
+      }
+
+      // get a list of items with this property set
+      //
+      plist = plist.getSelected(getInteresting(interestingProperties));
           
-          // helper function to get and format the properties - this generates a list of name|value pairs
-          //
-          var getNameValues = (items) => {
-            var nv = [];
-            items.forEach( (i) => {
-               Object.keys(i).forEach( (j) =>{
-                 if (interestingProperties.includes(j)) nv.push({name:j, value:i[j]});
-               })
-            })
-            return nv;
-          }
-          
-          // we need to turn this into a list of item/name/value
-          //
-          $scope.view.wdg.propertiesList.data = getNameValues(plist);
-          //
-          // and show the popup
-          //
-          twx.app.fn.triggerWidgetService("propertyPopup", 'showpopup')
-          
+      // helper function to get and format the properties - this generates a list of name|value pairs
+      //
+      var getNameValues = (items) => {
+        var nv = [];
+        items.forEach( (i) => {
+           Object.keys(i).forEach( (j) =>{
+             if (interestingProperties.includes(j)) nv.push({name:j, value:i[j]});
+           })
         })
-});
+        return nv;
+      }
+          
+      // we need to turn this into a list of item/name/value
+      //
+      $scope.view.wdg.propertiesList.data = getNameValues(plist);
+      //
+      // and show the popup
+      //
+      twx.app.fn.triggerWidgetService("propertyPopup", 'showpopup')
+          
+    })
+  }
+);
 
 
 // called if the user taps on a part
