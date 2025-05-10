@@ -160,7 +160,7 @@
                                             "widget-id": "experienceTitleLabel",
                                             "state-format-value": "text",
                                             "widget-name": "experienceTitleLabel",
-                                            "text": "Inspector Vuforia Studio sample",
+                                            "text": "Instance Vuforia Studio sample",
                                             "class": "simple-label sub-title-label"
                                           },
                                           "name": "twx-label"
