@@ -62,6 +62,7 @@ $scope.$on('modelLoaded', (event,model) => {
   
   // call setColor function to change the color of the model
   //
+  $scope.view.wdg.loadingPopup.visible = false;
   $scope.setColor(model)
   
 })
