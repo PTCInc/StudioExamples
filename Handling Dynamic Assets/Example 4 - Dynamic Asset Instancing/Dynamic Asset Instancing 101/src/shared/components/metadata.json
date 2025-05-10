@@ -1,0 +1,59 @@
+{
+  "name": "Dynamic Asset Instancing",
+  "version": "1.0.0",
+  "requires": [
+    "w320dp"
+  ],
+  "experiences": [
+    {
+      "vumark": "",
+      "experienceType": "none",
+      "id": 1,
+      "index-keys": [],
+      "title": {
+        "en": "Dynamic Asset Instancing"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Identification",
+      "url-template": "index.html?expId=1",
+      "entryPoint": "index.html?expId=1",
+      "thumbnail": "",
+      "thingTemplateName": ""
+    },
+    {
+      "vumark": "106811:666",
+      "experienceType": "vumark",
+      "index-keys": [
+        "urn:vuforia:vumark:106811:666"
+      ],
+      "title": {
+        "en": "Instance"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Visualization",
+      "url-template": "index.html?expId=2&vumark={{vuforia:vumark}}",
+      "id": 2,
+      "entryPoint": "index.html?expId=2",
+      "thumbnail": ""
+    }
+  ],
+  "accessType": "public",
+  "widgetsUsage": [],
+  "designedfor": []
+}
