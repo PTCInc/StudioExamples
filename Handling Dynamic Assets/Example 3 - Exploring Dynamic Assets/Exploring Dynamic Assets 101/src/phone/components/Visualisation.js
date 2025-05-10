@@ -1,5 +1,3 @@
-// $scope, $element, $attrs, $injector, $sce, $timeout, $http, $ionicPopup, and $ionicPopover services are available
-
 // function used in metadata find() call to check for the existance (= present + has a value)
 //
 var ifExists = (m,b,c) => {
@@ -40,69 +38,70 @@ $scope.$on("modelLoaded", (event, model) => {
       $scope.view.wdg[model].src != undefined && 
       $scope.view.wdg[model].src.length > 0) PTC.Metadata.fromId(model)
               .then  ( (metadata) => { 
-  
-  
+
     // we are looking for something called "explode". If it exists, the assumption here is that it is then name of 
     // a figure/sequence to 'play' to view an exploded view.
     //
     var e = ifExists(metadata,"explode");
-    
+
     if (e.length ==1) {  // ensure there is only one
-    
+
       $scope.view.wdg.explodeButton.visible = true;  // show the "explode" button (onclick is wired to function below)
-      
+
       var efn = metadata.get(e[0],"explode");         // get the value of "explode" - the name of the explosion seqeuence
       $scope.exploder = getNamedSequence(model, efn); // find the sequence with thin name
     }
     else {
-      
+
       // otherwise hide the button - there's nothing to explode 
       //
       $scope.view.wdg.explodeButton.visible = false;
     }
-    
-    // this is just a test - check to see if a random property exists anywhere
-    //
-    console.log(ifExists(metadata, "sausage").length);  // for the test models, this should be zero
-    
+
     // are any of the parts marked as 'illustration'?  if so, show a button (click handler below)
     //
     $scope.illustrated = ifExists(metadata, "illustration");
     $scope.view.wdg.illustratedButton.visible = $scope.illustrated.length > 0;
-    
+
+    // show a reset button if there is anything to reset...
     $scope.view.wdg.resetButton.visible = $scope.view.wdg.illustratedButton.visible || $scope.view.wdg.explodeButton.visible;
-    
+
+    // we should really only show this is there is something IN the list...
+    // see if you can work out how to do that
     $scope.view.wdg.displayInformationPopup.visible = true;
-    
+
     // now find some interesting properties
     //
-    var interestingProperties = ["weight","supplier","cost"]; 
+    var interestingProperties = ["weight", "supplier", "cost"]; 
     var plist = [];
-    
+
     interestingProperties.forEach( (p) => {
       // if there are any of these properties, anywhere, create a button that will show them
       //
       if (ifExists(metadata,p).length > 0) {
-        
+
         // the button in this case is an entry in a list widget - when the list is tapped, we show that item
         //
         plist.push( { name:p, model:model } );
       }
     })
-    // show the list (it could be empty)
+
+    // show the contents within list (it could be empty)
     //
     $scope.view.wdg.labelList.list = plist;
-    
+
     // ensure the model itself is not visible - we are using a physical target, so reality will do most of the rendering
     // we will only show the augmentations we need
     //
     $scope.view.wdg.dynamicModel.visible = twx.app.isPreview();
-    
+
   })
-  
+
 })
 
+// used to keep track of all the labels we produce...
 $scope.labels = {};
+
 // renders text onto an image - this is the foundation of all 3d labels, they are just images...
 // in this example, there is not base image as such, we just create an empty canvas and draw onto that
 // 
