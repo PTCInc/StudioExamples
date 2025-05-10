@@ -8,3 +8,5 @@ This folder features example projects for 3D-guided service instructions that ta
     - 3D-Guided Service Instructions 301 - Adding Pricing Data and a Shopping Cart to a Model 
     - 3D-Guided Service Instructions 302 - Add a Simple ThingWorx Service to Vuforia Studio  
     - 3D-Guided Service Instructions 303 - Create a Persistent Shopping Cart Using ThingWorx
+* 3D-Guided Service Instructions 400 
+    - 3D-Guided Service Instructions 401 - Pricing and options and handling replacements

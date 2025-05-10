@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="quadcopter400" motionHint="adaptive" trackingMode="default"/>
+
+</Tracking>
+
+<Assembly name="quadcopter400s_assembly" assemblyId="2318e812f29245a78d82a248a5a5cf40">
+<Part name="quadcopter400" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="1.1241e-15 -0.00755521 0.35362" rotation="AD: 0.9994925992752499 0.09764467750153741 -0.35901657972728784 208.599" trained="yes">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

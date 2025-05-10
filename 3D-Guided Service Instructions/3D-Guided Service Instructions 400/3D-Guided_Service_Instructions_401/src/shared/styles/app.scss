@@ -1,0 +1,67 @@
+/*
+   Add additional application styles or override styles provided by the selected theme or widgets.
+   You can include SASS syntax, as this file is built to a css file using a SASS processor.
+
+   Available Variables:
+
+   Variable Name      Description
+   ----------------------------------------------------
+   $resources         References the directory where resources reside (images, etc.), this directory may be different
+                      between the design time and the runtime directory structure.
+
+                      Example: background-image: url(#{$resources}/Uploaded/image.png)
+
+   $font-path        References the relative directory where fonts are stored.
+*/
+
+// buttons
+.btnadd {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btncontinue {
+  background: #e0e0e0;
+  background-image: -webkit-linear-gradient(top, #e0e0e0, #6b6b6b);
+  background-image: -moz-linear-gradient(top, #e0e0e0, #6b6b6b);
+  background-image: -ms-linear-gradient(top, #e0e0e0, #6b6b6b);
+  background-image: -o-linear-gradient(top, #e0e0e0, #6b6b6b);
+  background-image: linear-gradient(to bottom, #e0e0e0, #6b6b6b);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btndisassemble {
+  background: #91a3b0;
+  background-image: -webkit-linear-gradient(top, #91a3b0, #6b6b6b);
+  background-image: -moz-linear-gradient(top, #91a3b0, #6b6b6b);
+  background-image: -ms-linear-gradient(top, #91a3b0, #6b6b6b);
+  background-image: -o-linear-gradient(top, #91a3b0, #6b6b6b);
+  background-image: linear-gradient(to bottom, #91a3b0, #6b6b6b);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}

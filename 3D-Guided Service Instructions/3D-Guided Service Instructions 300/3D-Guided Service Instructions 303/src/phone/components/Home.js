@@ -120,18 +120,6 @@ $scope.$on('getPriceAvailability.serviceInvokeComplete', function(evt) {
 
   } //disassemble function end
   
-  //
-  // userpick event listener that will take place when you click on another part without choosing an option in the popup
-  $scope.$on('userpick', function (event, targetName, targetType, eventData) {
-    
-    //
-    // close the popup and remove the shader from the part even when you didn't chose an option from the popup
-    $scope.popup.close()
-    
-    $scope.hiliteOff()
-    
-  }) // closing userpick end
-  
 }) // getPriceAvailability end
            
 //

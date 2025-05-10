@@ -1,0 +1,46 @@
+[2023-02-16T15:50:43.887Z] debug: [twx-studio:upgrade:ScalablePartLocator] Begin upgrade of project
+[2023-02-16T15:50:43.889Z] info: [twx-studio:upgrade:ScalablePartLocator] Upgrading project
+[2023-02-16T15:50:43.928Z] debug: [twx-studio:upgrade:ScalablePartLocator] Make sure there are not any stale files lying around
+[2023-02-16T15:50:43.930Z] debug: [twx-studio:upgrade:ScalablePartLocator] Create .gitignore for project dir
+[2023-02-16T15:50:43.931Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copying /src/**/* to project, overwrite=false
+[2023-02-16T15:50:43.932Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2023-02-16T15:50:44.028Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copy of project files complete
+[2023-02-16T15:50:44.029Z] debug: [twx-studio:upgrade:ScalablePartLocator] Updating version to 
+[2023-02-16T15:50:44.029Z] debug: [twx-studio:upgrade:ScalablePartLocator] onupgrade sucessful, now build the project
+[2023-02-16T15:50:44.029Z] debug: [twx-studio:upgrade:ScalablePartLocator] BEGIN buildApp
+[2023-02-16T15:50:44.029Z] debug: [twx-studio:upgrade:ScalablePartLocator] write settings
+[2023-02-16T15:50:44.030Z] debug: [twx-studio:upgrade:ScalablePartLocator] copy runtime extensions
+[2023-02-16T15:50:44.557Z] debug: [twx-studio:upgrade:ScalablePartLocator] packageThemeSet
+[2023-02-16T15:50:45.371Z] debug: [twx-studio:upgrade:ScalablePartLocator] onBuild
+[2023-02-16T15:50:45.371Z] info: [twx-studio:upgrade:ScalablePartLocator] Building ves-ar-extension app:
+[2023-02-16T15:50:45.392Z] debug: [twx-studio:upgrade:ScalablePartLocator] pathDir
+[2023-02-16T15:50:45.392Z] debug: [twx-studio:upgrade:ScalablePartLocator] scaffoldDir
+[2023-02-16T15:50:45.392Z] debug: [twx-studio:upgrade:ScalablePartLocator] copySrc
+[2023-02-16T15:50:45.600Z] debug: [twx-studio:upgrade:ScalablePartLocator] buildApp
+[2023-02-16T15:50:45.774Z] debug: [twx-studio:upgrade:ScalablePartLocator] END buildApp
+[2023-02-16T15:50:45.774Z] debug: [twx-studio:upgrade:ScalablePartLocator] Build succeeded.
+[2023-02-19T17:26:28.012Z] debug: [twx-studio:upgrade:ScalablePartLocator] Begin upgrade of project
+[2023-02-19T17:26:28.014Z] info: [twx-studio:upgrade:ScalablePartLocator] Upgrading project
+[2023-02-19T17:26:28.052Z] debug: [twx-studio:upgrade:ScalablePartLocator] Make sure there are not any stale files lying around
+[2023-02-19T17:26:28.053Z] debug: [twx-studio:upgrade:ScalablePartLocator] Removing 
+[2023-02-19T17:26:28.066Z] debug: [twx-studio:upgrade:ScalablePartLocator] Removing 
+[2023-02-19T17:26:28.192Z] debug: [twx-studio:upgrade:ScalablePartLocator] Removing 
+[2023-02-19T17:26:28.264Z] debug: [twx-studio:upgrade:ScalablePartLocator] Removing 
+[2023-02-19T17:26:28.282Z] debug: [twx-studio:upgrade:ScalablePartLocator] Removing 
+[2023-02-19T17:26:28.288Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copying /src/**/* to project, overwrite=false
+[2023-02-19T17:26:28.296Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2023-02-19T17:26:29.074Z] debug: [twx-studio:upgrade:ScalablePartLocator] Copy of project files complete
+[2023-02-19T17:26:29.075Z] debug: [twx-studio:upgrade:ScalablePartLocator] Updating version to 
+[2023-02-19T17:26:29.075Z] debug: [twx-studio:upgrade:ScalablePartLocator] onupgrade sucessful, now build the project
+[2023-02-19T17:26:29.075Z] debug: [twx-studio:upgrade:ScalablePartLocator] BEGIN buildApp
+[2023-02-19T17:26:29.075Z] debug: [twx-studio:upgrade:ScalablePartLocator] write settings
+[2023-02-19T17:26:29.077Z] debug: [twx-studio:upgrade:ScalablePartLocator] copy runtime extensions
+[2023-02-19T17:26:29.722Z] debug: [twx-studio:upgrade:ScalablePartLocator] packageThemeSet
+[2023-02-19T17:26:30.766Z] debug: [twx-studio:upgrade:ScalablePartLocator] onBuild
+[2023-02-19T17:26:30.766Z] info: [twx-studio:upgrade:ScalablePartLocator] Building ves-ar-extension app:
+[2023-02-19T17:26:30.896Z] debug: [twx-studio:upgrade:ScalablePartLocator] pathDir
+[2023-02-19T17:26:30.896Z] debug: [twx-studio:upgrade:ScalablePartLocator] scaffoldDir
+[2023-02-19T17:26:30.896Z] debug: [twx-studio:upgrade:ScalablePartLocator] copySrc
+[2023-02-19T17:26:31.235Z] debug: [twx-studio:upgrade:ScalablePartLocator] buildApp
+[2023-02-19T17:26:31.652Z] debug: [twx-studio:upgrade:ScalablePartLocator] END buildApp
+[2023-02-19T17:26:31.652Z] debug: [twx-studio:upgrade:ScalablePartLocator] Build succeeded.

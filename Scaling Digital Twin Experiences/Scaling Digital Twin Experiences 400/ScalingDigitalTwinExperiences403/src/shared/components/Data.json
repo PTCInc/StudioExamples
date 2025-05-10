@@ -1,0 +1,118 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "guide",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "guide",
+        "value": "/ExperienceServices/content/reps/sdte400/targets/quadDTx//guideDTx.png"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "target",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "target",
+        "value": "vuforia-image:///ExperienceServices/content/reps/sdte400/targets/quadDTx/quadDTx?id="
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "model",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "model",
+        "value": "/ExperienceService/content/reps/sdte400/models/QuadcopterDT2.pvz"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "angle",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "angle",
+        "value": "-90"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "offset",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "offset",
+        "value": "-0.05"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "meta",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "meta",
+        "value": "/ExperienceService/content/reps/sdte400/models/QuadcopterDT2.metadata.json"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "username",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "username",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "password",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "password",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    }
+  ],
+  "name": "twx-app-mdl"
+}

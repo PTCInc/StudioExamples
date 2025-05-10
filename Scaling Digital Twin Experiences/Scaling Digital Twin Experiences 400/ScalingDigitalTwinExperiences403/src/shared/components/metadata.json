@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "requires": [
+    "w320dp"
+  ],
+  "experiences": [
+    {
+      "vumark": "",
+      "experienceType": "none",
+      "id": 1,
+      "index-keys": [],
+      "title": {
+        "en": "ScalingDigitalTwinExperiences403"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Home",
+      "url-template": "index.html?expId=1",
+      "entryPoint": "index.html?expId=1",
+      "thumbnail": "",
+      "thingTemplateName": ""
+    }
+  ],
+  "widgetsUsage": [],
+  "accessType": "public",
+  "designedfor": []
+}

@@ -1,0 +1,1042 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "requires": [
+    "w320dp"
+  ],
+  "experiences": [
+    {
+      "vumark": "",
+      "experienceType": "none",
+      "id": 1,
+      "index-keys": [],
+      "title": {
+        "en": "ScalablePartLocator"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "decide",
+      "url-template": "index.html?expId=1",
+      "entryPoint": "index.html?expId=1",
+      "thumbnail": "",
+      "thingTemplateName": ""
+    }
+  ],
+  "widgetsUsage": [
+    {
+      "timestamp": "2023-02-16T16:16:43.959Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:33:11.043Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:34:56.536Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:38:18.583Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:40:22.061Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:41:20.798Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:46:14.356Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T16:53:35.599Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T17:01:21.700Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T17:05:35.735Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T17:14:47.572Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T17:24:36.081Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T18:43:38.887Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T18:57:35.865Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:01:45.318Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-list": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:14:22.637Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-list": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:24:15.914Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:25:37.351Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:27:54.708Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:29:45.723Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:34:51.217Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:37:09.786Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-metagetta": 2,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:40:38.389Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:42:27.861Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:49:33.822Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:52:33.189Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1,
+        "twx-text-input": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T19:59:42.807Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1,
+        "twx-text-input": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T20:01:53.346Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "twx-dt-target-spatial": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-button": 1,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-16T20:03:44.162Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "twx-tml-text": 1,
+        "octodynamic-dt-target": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-finder": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-17T15:36:05.449Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "octodynamic-dt-target": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-label": 4,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 5,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-19T17:09:43.962Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 2,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "octodynamic-dt-target": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-label": 5,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 3,
+        "twx-row": 5,
+        "twx-col": 8,
+        "twx-text-input": 2,
+        "twx-checkbox": 1,
+        "twx-button": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-19T17:12:11.177Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 2,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "octodynamic-dt-target": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-label": 5,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 3,
+        "twx-row": 5,
+        "twx-col": 8,
+        "twx-text-input": 2,
+        "twx-checkbox": 1,
+        "twx-button": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-19T17:13:42.132Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 2,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "twx-mapper": 1,
+        "octodynamic-dt-target": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-label": 5,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 3,
+        "twx-row": 5,
+        "twx-col": 8,
+        "twx-text-input": 2,
+        "twx-checkbox": 1,
+        "twx-button": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-20T11:02:00.422Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-20T11:03:11.872Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1
+      }
+    },
+    {
+      "timestamp": "2023-02-20T11:13:43.665Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 1,
+        "twx-gridlayout": 1,
+        "twx-row": 1,
+        "twx-col": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-20T11:35:57.953Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 1,
+        "twx-gridlayout": 1,
+        "twx-row": 1,
+        "twx-col": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-20T11:38:41.385Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 1,
+        "twx-gridlayout": 1,
+        "twx-row": 1,
+        "twx-col": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-21T16:41:01.225Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-21T16:48:03.509Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-21T16:49:26.741Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-21T16:51:03.901Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-21T21:58:43.974Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-finder": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T08:24:35.559Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "octodynamic-dt-target": 1,
+        "twx-dt-model": 1,
+        "twx-finder": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-overlay-body": 1,
+        "twx-label": 3,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T10:57:31.350Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T11:25:15.329Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-label": 3,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T11:50:51.967Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-fieldgetter": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-label": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T12:04:45.472Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-abswitch": 1,
+        "twx-fieldgetter": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-label": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T13:31:55.512Z",
+      "action": "PUBLISH",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-fieldgetter": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-label": 2,
+        "twx-text-input": 2
+      }
+    },
+    {
+      "timestamp": "2023-02-22T14:24:53.162Z",
+      "action": "LATEST_SAVE",
+      "usage": {
+        "twx-view": 1,
+        "twx-dt-view": 1,
+        "twx-dt-model": 1,
+        "octodynamic-dt-target": 1,
+        "twx-mapper": 1,
+        "twx-metagetta": 1,
+        "twx-overlay": 1,
+        "twx-overlay-container": 5,
+        "twx-checkbox": 1,
+        "twx-overlay-body": 1,
+        "twx-finder": 1,
+        "twx-fieldgetter": 1,
+        "twx-abswitch": 1,
+        "twx-panel": 1,
+        "twx-repeater": 1,
+        "twx-gridlayout": 2,
+        "twx-row": 2,
+        "twx-col": 4,
+        "twx-label": 2,
+        "twx-text-input": 2
+      }
+    }
+  ],
+  "accessType": "private",
+  "designedfor": []
+}

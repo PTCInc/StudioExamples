@@ -1,0 +1,410 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "name": "shoppingThing",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "shoppingThing"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "description",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"description\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "name",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"name\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "tags",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"tags\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "thingTemplate",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"shoppingThing\"].properties[\"thingTemplate\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "getPriceAvailability",
+            "id": "getPriceAvailability"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "name": "getOptionsPriceAvailability",
+            "id": "getOptionsPriceAvailability"
+          },
+          "name": "twx-model-service"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "name": "cartThing",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "cartThing"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "description",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"cartThing\"].properties[\"description\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "name",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"cartThing\"].properties[\"name\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "numberOfOrders",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"cartThing\"].properties[\"numberOfOrders\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "tags",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"cartThing\"].properties[\"tags\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "thingTemplate",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"cartThing\"].properties[\"thingTemplate\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "getCart",
+            "id": "getCart",
+            "twx-no-auto-select": "",
+            "on-app-load": ""
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "name": "getCartTotal",
+            "id": "getCartTotal"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "name": "orderCart",
+            "id": "orderCart"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "name": "clearCart",
+            "id": "clearCart"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "name": "addToCart",
+            "id": "addToCart"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "id": "somethingChanged",
+            "name": "somethingChanged",
+            "sourceproperty": ""
+          },
+          "name": "twx-model-event"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-1609766223356",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
+            "source-name": "cartThing",
+            "source-event": "getCart.serviceInvokeComplete",
+            "handler-type": "data",
+            "handler-name": "cartThing",
+            "handler-service": "getCartTotal",
+            "handler-path": "app.mdl.cartThing.svc.getCartTotal"
+          },
+          "name": "twx-eventbind"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-1609967909524",
+            "source-type": "event",
+            "source-label": "somethingChanged",
+            "source-name": "cartThing",
+            "source-event": "somethingChanged",
+            "handler-type": "data",
+            "handler-name": "cartThing",
+            "handler-service": "getCart",
+            "handler-path": "app.mdl.cartThing.svc.getCart"
+          },
+          "name": "twx-eventbind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "name": "drone1",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "drone1"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "batteryCharge",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"drone1\"].properties[\"batteryCharge\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "color",
+            "twx-auto-refresh": "true",
+            "twx-model": "app.mdl[\"drone1\"].properties[\"color\"]"
+          },
+          "name": "twx-model-property"
+        },
+        {
+          "attributes": {
+            "name": "setColor",
+            "id": "setColor"
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "databind-id": "db-1616536482073",
+            "source-type": "data",
+            "source-name": "thing",
+            "source-item-type": "value",
+            "source-item-name": "thing",
+            "binding-type": "custom_field",
+            "from-expression": "app.params['thing']",
+            "to-property": "twx-entity-name"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": "drone1"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "partno",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "partno",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1605206407606",
+            "source-type": "ui",
+            "source-label": "Text Input",
+            "source-name": "userInput",
+            "source-item-type": "property",
+            "source-item-name": "text",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Home'].wdg['userInput']['text']",
+            "to-property": "app.params['partno']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "cartButton",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cartButton",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "cart",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "cart",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "priceInfo",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "priceInfo",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemCount",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemCount",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemName",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemName",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "itemNumber",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "itemNumber",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "color",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "color",
+        "value": "green"
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1645467559344",
+            "source-type": "data",
+            "source-name": "drone1",
+            "source-item-type": "property",
+            "source-item-name": "color",
+            "binding-type": "property_field",
+            "from-expression": "app.mdl['drone1'].properties['color']",
+            "to-property": "app.params['color']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "model",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "model",
+        "value": "sdte400/models/QuadcopterDT2.pvz"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "scanID",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "scanID",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-1645484781375",
+            "source-type": "ui",
+            "source-label": "Scan",
+            "source-name": "scanner",
+            "source-item-type": "property",
+            "source-item-name": "scannedValue",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['replace'].wdg['scanner']['scannedValue']",
+            "to-property": "app.params['scanID']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}

@@ -1,0 +1,22 @@
+[2021-06-22T12:20:00.048Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Begin upgrade of project
+[2021-06-22T12:20:00.050Z] info: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Upgrading project
+[2021-06-22T12:20:00.054Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Make sure there are not any stale files lying around
+[2021-06-22T12:20:00.055Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Create .gitignore for project dir
+[2021-06-22T12:20:00.056Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Copying /src/**/* to project, overwrite=false
+[2021-06-22T12:20:00.056Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Copying /**/* to project, skip /src/**/*,  overwrite=true
+[2021-06-22T12:20:00.114Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Copy of project files complete
+[2021-06-22T12:20:00.114Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Updating version to 
+[2021-06-22T12:20:00.114Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Copying project specific default resources.
+[2021-06-22T12:20:00.200Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] onupgrade sucessful, now build the project
+[2021-06-22T12:20:00.200Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] BEGIN buildApp
+[2021-06-22T12:20:00.200Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] write settings
+[2021-06-22T12:20:00.201Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] copy runtime extensions
+[2021-06-22T12:20:00.536Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] packageThemeSet
+[2021-06-22T12:20:01.342Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] onBuild
+[2021-06-22T12:20:01.342Z] info: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Building ves-ar-extension app:
+[2021-06-22T12:20:01.370Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] pathDir
+[2021-06-22T12:20:01.370Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] scaffoldDir
+[2021-06-22T12:20:01.370Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] copySrc
+[2021-06-22T12:20:01.485Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] buildApp
+[2021-06-22T12:20:01.632Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] END buildApp
+[2021-06-22T12:20:01.633Z] debug: [twx-studio:upgrade:3D-Guided_Service_Instructions_201H] Build succeeded.

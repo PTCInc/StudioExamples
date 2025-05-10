@@ -1,0 +1,61 @@
+{
+  "name": "3D-Guided Service Instructions 401",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "3D-Guided_Service_Instructions_401",
+  "thingworxServer": "https://xuqztwnu.studio-trial.thingworx.io",
+  "viewTemplateFileName": "home-ar.json",
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Home",
+          "fileName": "Home",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Home"
+        },
+        {
+          "name": "replace",
+          "fileName": "replace",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "replace"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "fragments": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "device": {
+    "name": "ipad",
+    "width": "1024",
+    "height": "768"
+  },
+  "mainNavigationMenuStyle": "leftSideMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "1.55.2149"
+}

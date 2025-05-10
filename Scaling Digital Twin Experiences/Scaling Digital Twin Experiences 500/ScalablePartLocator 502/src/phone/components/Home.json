@@ -1,0 +1,724 @@
+{
+  "attributes": {
+    "twx-widget": "",
+    "widget-id": "view-1",
+    "widget-name": "view-1",
+    "is-widget-container": "true",
+    "viewtype": "ar"
+  },
+  "children": [
+    {
+      "name": "twx-container-content",
+      "children": [
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "3DContainer-1",
+            "widget-name": "3D Container",
+            "is-widget-container": "true",
+            "dropshadow": "true"
+          },
+          "name": "twx-dt-view",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "locatable",
+                    "widget-name": "locatable",
+                    "is-widget-container": "true",
+                    "x": "0.0699",
+                    "y": "0.0000"
+                  },
+                  "name": "twx-dt-model",
+                  "children": [
+                    {
+                      "attributes": {
+                        "databind-id": "db-1677061828565",
+                        "source-type": "data",
+                        "source-name": "model",
+                        "source-item-type": "value",
+                        "source-item-name": "model",
+                        "binding-type": "custom_field",
+                        "from-expression": "app.params['model']",
+                        "to-property": "src"
+                      },
+                      "name": "twx-databind"
+                    },
+                    {
+                      "attributes": {
+                        "eventbind-id": "eb-1677064322689",
+                        "source-type": "widget",
+                        "source-label": "Model",
+                        "source-name": "locatable",
+                        "source-event": "modelLoaded",
+                        "handler-type": "ui",
+                        "handler-name": "finder-4",
+                        "handler-service": "find",
+                        "handler-path": "app.view[\"Home\"].wdg[\"finder-4\"].svc.find"
+                      },
+                      "name": "twx-eventbind"
+                    },
+                    {
+                      "name": "twx-container-content"
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "octoDynamicTarget-4",
+                    "tracking-indicator": "false",
+                    "widget-name": "octoDynamicTarget-4",
+                    "size": "0.25",
+                    "rx": "-90"
+                  },
+                  "name": "octodynamic-dt-target",
+                  "children": [
+                    {
+                      "attributes": {
+                        "databind-id": "db-1677061868317",
+                        "source-type": "data",
+                        "source-name": "target",
+                        "source-item-type": "value",
+                        "source-item-name": "target",
+                        "binding-type": "custom_field",
+                        "from-expression": "app.params['target']",
+                        "to-property": "dataset"
+                      },
+                      "name": "twx-databind"
+                    },
+                    {
+                      "attributes": {
+                        "databind-id": "db-1677061876741",
+                        "source-type": "data",
+                        "source-name": "guide",
+                        "source-item-type": "value",
+                        "source-item-name": "guide",
+                        "binding-type": "custom_field",
+                        "from-expression": "app.params['guide']",
+                        "to-property": "url"
+                      },
+                      "name": "twx-databind"
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "mapper-4",
+                    "widget-name": "mapper-4",
+                    "model": "locatable"
+                  },
+                  "name": "twx-mapper",
+                  "children": [
+                    {
+                      "attributes": {
+                        "databind-id": "db-1677062125890",
+                        "source-type": "ui",
+                        "source-label": "Finder",
+                        "source-name": "finder-4",
+                        "source-item-type": "property",
+                        "source-item-name": "results",
+                        "binding-type": "widget_property",
+                        "from-expression": "app.view['Home'].wdg['finder-4']['results']",
+                        "to-property": "data"
+                      },
+                      "name": "twx-databind"
+                    },
+                    {
+                      "attributes": {
+                        "databind-id": "db-1677062155279",
+                        "source-type": "ui",
+                        "source-label": "Checkbox",
+                        "source-name": "checkbox-1",
+                        "source-item-type": "property",
+                        "source-item-name": "value",
+                        "binding-type": "widget_property",
+                        "from-expression": "app.view['Home'].wdg['checkbox-1']['value']",
+                        "to-property": "physical"
+                      },
+                      "name": "twx-databind"
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "metaGetta-4",
+                    "widget-name": "metaGetta-4",
+                    "model": "locatable"
+                  },
+                  "name": "twx-metagetta"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "attributes": {
+            "twx-widget": "",
+            "widget-id": "2DOverlay-1",
+            "widget-name": "2D Overlay",
+            "is-widget-container": "true"
+          },
+          "name": "twx-overlay",
+          "children": [
+            {
+              "name": "twx-container-content",
+              "children": [
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-1",
+                    "widget-name": "Top Panel",
+                    "is-widget-container": "true",
+                    "position": "top"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "checkbox-1",
+                            "widget-name": "checkbox-1",
+                            "label": "physical"
+                          },
+                          "name": "twx-checkbox"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "2DOverlayBody-1",
+                    "widget-name": "2D Body",
+                    "is-widget-container": "true"
+                  },
+                  "name": "twx-overlay-body",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-2",
+                            "widget-name": "Left Panel",
+                            "is-widget-container": "true",
+                            "position": "left"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content"
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-3",
+                            "widget-name": "Center Panel",
+                            "is-widget-container": "true",
+                            "position": "center"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "finder-4",
+                                    "widget-name": "finder-4",
+                                    "auto": "false",
+                                    "modelid": "locatable",
+                                    "op": "same",
+                                    "include": "Part Name,partNumber"
+                                  },
+                                  "name": "twx-finder",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677062026472",
+                                        "source-type": "ui",
+                                        "source-label": "Text Input",
+                                        "source-name": "searchValue",
+                                        "source-item-type": "property",
+                                        "source-item-name": "text",
+                                        "binding-type": "widget_property",
+                                        "from-expression": "app.view['Home'].wdg['searchValue']['text']",
+                                        "to-property": "value"
+                                      },
+                                      "name": "twx-databind"
+                                    },
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677062033592",
+                                        "source-type": "ui",
+                                        "source-label": "Text Input",
+                                        "source-name": "searchKey",
+                                        "source-item-type": "property",
+                                        "source-item-name": "text",
+                                        "binding-type": "widget_property",
+                                        "from-expression": "app.view['Home'].wdg['searchKey']['text']",
+                                        "to-property": "name"
+                                      },
+                                      "name": "twx-databind"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "fieldGetter-2",
+                                    "widget-name": "fieldGetter-2"
+                                  },
+                                  "name": "twx-fieldgetter",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677072338149",
+                                        "source-type": "data",
+                                        "source-name": "locate",
+                                        "source-item-type": "value",
+                                        "source-item-name": "locate",
+                                        "binding-type": "custom_field",
+                                        "from-expression": "app.params['locate']",
+                                        "to-property": "dataset"
+                                      },
+                                      "name": "twx-databind",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "filter-id": "df-1677072372597",
+                                            "filter-body": "return value.split(':')[1]"
+                                          },
+                                          "name": "twx-data-filter"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677072377413",
+                                        "source-type": "data",
+                                        "source-name": "locate",
+                                        "source-item-type": "value",
+                                        "source-item-name": "locate",
+                                        "binding-type": "custom_field",
+                                        "from-expression": "app.params['locate']",
+                                        "to-property": "field"
+                                      },
+                                      "name": "twx-databind",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "filter-id": "df-1677072385316",
+                                            "filter-body": "return value.split(':')[0]"
+                                          },
+                                          "name": "twx-data-filter"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "abSwitch-2",
+                                    "widget-name": "abSwitch-2",
+                                    "polarity": ""
+                                  },
+                                  "name": "twx-abswitch",
+                                  "children": [
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677072569376",
+                                        "source-type": "data",
+                                        "source-name": "locate",
+                                        "source-item-type": "value",
+                                        "source-item-name": "locate",
+                                        "binding-type": "custom_field",
+                                        "from-expression": "app.params['locate']",
+                                        "to-property": "polarity"
+                                      },
+                                      "name": "twx-databind",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "filter-id": "df-1677072593973",
+                                            "filter-body": "return (value.split(':').length==2) ? true : false"
+                                          },
+                                          "name": "twx-data-filter"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677072606532",
+                                        "source-type": "ui",
+                                        "source-label": "FieldGetter",
+                                        "source-name": "fieldGetter-2",
+                                        "source-item-type": "property",
+                                        "source-item-name": "result",
+                                        "binding-type": "widget_property",
+                                        "from-expression": "app.view['Home'].wdg['fieldGetter-2']['result']",
+                                        "to-property": "inputA"
+                                      },
+                                      "name": "twx-databind"
+                                    },
+                                    {
+                                      "attributes": {
+                                        "databind-id": "db-1677072613541",
+                                        "source-type": "data",
+                                        "source-name": "locate",
+                                        "source-item-type": "value",
+                                        "source-item-name": "locate",
+                                        "binding-type": "custom_field",
+                                        "from-expression": "app.params['locate']",
+                                        "to-property": "inputB"
+                                      },
+                                      "name": "twx-databind"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "panel-4",
+                            "widget-name": "Right Panel",
+                            "is-widget-container": "true",
+                            "position": "right",
+                            "width": "300px"
+                          },
+                          "name": "twx-overlay-container",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "panel-8",
+                                    "widget-name": "panel-8",
+                                    "is-widget-container": "true"
+                                  },
+                                  "name": "twx-panel",
+                                  "children": [
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "repeater-4",
+                                            "widget-name": "repeater-4",
+                                            "is-widget-repeater": "true"
+                                          },
+                                          "name": "twx-repeater",
+                                          "children": [
+                                            {
+                                              "attributes": {
+                                                "databind-id": "db-1677063168814",
+                                                "source-type": "ui",
+                                                "source-label": "Finder",
+                                                "source-name": "finder-4",
+                                                "source-item-type": "property",
+                                                "source-item-name": "results",
+                                                "binding-type": "widget_property",
+                                                "from-expression": "app.view['Home'].wdg['finder-4']['results']",
+                                                "to-property": "data"
+                                              },
+                                              "name": "twx-databind"
+                                            },
+                                            {
+                                              "name": "twx-repeater-content",
+                                              "children": [
+                                                {
+                                                  "attributes": {
+                                                    "twx-widget": "",
+                                                    "widget-id": "gridLayout-8",
+                                                    "widget-name": "gridLayout-8",
+                                                    "is-widget-container": "true"
+                                                  },
+                                                  "name": "twx-gridlayout",
+                                                  "children": [
+                                                    {
+                                                      "name": "twx-container-content",
+                                                      "children": [
+                                                        {
+                                                          "attributes": {
+                                                            "twx-widget": "",
+                                                            "widget-id": "row-8",
+                                                            "widget-name": "row-8",
+                                                            "is-widget-container": "true"
+                                                          },
+                                                          "name": "twx-row",
+                                                          "children": [
+                                                            {
+                                                              "name": "twx-container-content",
+                                                              "children": [
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "column-15",
+                                                                    "widget-name": "column-15",
+                                                                    "is-widget-container": "true"
+                                                                  },
+                                                                  "name": "twx-col",
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "twx-container-content",
+                                                                      "children": [
+                                                                        {
+                                                                          "attributes": {
+                                                                            "twx-widget": "",
+                                                                            "widget-id": "label-11",
+                                                                            "state-format-value": "text",
+                                                                            "widget-name": "label-11",
+                                                                            "text": "{{item['Part Name']}}"
+                                                                          },
+                                                                          "name": "twx-label"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "attributes": {
+                                                                    "twx-widget": "",
+                                                                    "widget-id": "column-16",
+                                                                    "widget-name": "column-16",
+                                                                    "is-widget-container": "true"
+                                                                  },
+                                                                  "name": "twx-col",
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "twx-container-content",
+                                                                      "children": [
+                                                                        {
+                                                                          "attributes": {
+                                                                            "twx-widget": "",
+                                                                            "widget-id": "label-12",
+                                                                            "state-format-value": "text",
+                                                                            "widget-name": "label-12",
+                                                                            "text": "{{item.partNumber}}"
+                                                                          },
+                                                                          "name": "twx-label"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "attributes": {
+                    "twx-widget": "",
+                    "widget-id": "panel-5",
+                    "widget-name": "Bottom Panel",
+                    "is-widget-container": "true",
+                    "position": "bottom"
+                  },
+                  "name": "twx-overlay-container",
+                  "children": [
+                    {
+                      "name": "twx-container-content",
+                      "children": [
+                        {
+                          "attributes": {
+                            "twx-widget": "",
+                            "widget-id": "gridLayout-7",
+                            "widget-name": "gridLayout-7",
+                            "is-widget-container": "true"
+                          },
+                          "name": "twx-gridlayout",
+                          "children": [
+                            {
+                              "name": "twx-container-content",
+                              "children": [
+                                {
+                                  "attributes": {
+                                    "twx-widget": "",
+                                    "widget-id": "row-7",
+                                    "widget-name": "row-7",
+                                    "is-widget-container": "true"
+                                  },
+                                  "name": "twx-row",
+                                  "children": [
+                                    {
+                                      "name": "twx-container-content",
+                                      "children": [
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "column-13",
+                                            "widget-name": "column-13",
+                                            "is-widget-container": "true"
+                                          },
+                                          "name": "twx-col",
+                                          "children": [
+                                            {
+                                              "name": "twx-container-content",
+                                              "children": [
+                                                {
+                                                  "attributes": {
+                                                    "twx-widget": "",
+                                                    "widget-id": "searchKey",
+                                                    "widget-name": "searchKey",
+                                                    "placeholder": "placeholder text",
+                                                    "label": "Input Label"
+                                                  },
+                                                  "name": "twx-text-input",
+                                                  "children": [
+                                                    {
+                                                      "attributes": {
+                                                        "eventbind-id": "eb-1677064340275",
+                                                        "source-type": "widget",
+                                                        "source-label": "Text Input",
+                                                        "source-name": "searchKey",
+                                                        "source-event": "change",
+                                                        "handler-type": "ui",
+                                                        "handler-name": "finder-4",
+                                                        "handler-service": "find",
+                                                        "handler-path": "app.view[\"Home\"].wdg[\"finder-4\"].svc.find"
+                                                      },
+                                                      "name": "twx-eventbind"
+                                                    },
+                                                    {
+                                                      "attributes": {
+                                                        "databind-id": "db-1677064575212",
+                                                        "source-type": "data",
+                                                        "source-name": "searchkey",
+                                                        "source-item-type": "value",
+                                                        "source-item-name": "searchkey",
+                                                        "binding-type": "custom_field",
+                                                        "from-expression": "app.params['searchkey']",
+                                                        "to-property": "text"
+                                                      },
+                                                      "name": "twx-databind"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "attributes": {
+                                            "twx-widget": "",
+                                            "widget-id": "column-14",
+                                            "widget-name": "column-14",
+                                            "is-widget-container": "true"
+                                          },
+                                          "name": "twx-col",
+                                          "children": [
+                                            {
+                                              "name": "twx-container-content",
+                                              "children": [
+                                                {
+                                                  "attributes": {
+                                                    "twx-widget": "",
+                                                    "widget-id": "searchValue",
+                                                    "widget-name": "searchValue",
+                                                    "placeholder": "placeholder text",
+                                                    "label": "Input Label"
+                                                  },
+                                                  "name": "twx-text-input",
+                                                  "children": [
+                                                    {
+                                                      "attributes": {
+                                                        "eventbind-id": "eb-1677064331850",
+                                                        "source-type": "widget",
+                                                        "source-label": "Text Input",
+                                                        "source-name": "searchValue",
+                                                        "source-event": "change",
+                                                        "handler-type": "ui",
+                                                        "handler-name": "finder-4",
+                                                        "handler-service": "find",
+                                                        "handler-path": "app.view[\"Home\"].wdg[\"finder-4\"].svc.find"
+                                                      },
+                                                      "name": "twx-eventbind"
+                                                    },
+                                                    {
+                                                      "attributes": {
+                                                        "databind-id": "db-1677072625321",
+                                                        "source-type": "ui",
+                                                        "source-label": "ABSwitch",
+                                                        "source-name": "abSwitch-2",
+                                                        "source-item-type": "property",
+                                                        "source-item-name": "result",
+                                                        "binding-type": "widget_property",
+                                                        "from-expression": "app.view['Home'].wdg['abSwitch-2']['result']",
+                                                        "to-property": "text"
+                                                      },
+                                                      "name": "twx-databind"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twx-fragment-parameters"
+    },
+    {
+      "name": "twx-view-data"
+    }
+  ],
+  "name": "twx-view"
+}
