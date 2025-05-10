@@ -56,5 +56,7 @@
   "fontRuntimeDir": "../fonts",
   "fontDesigntimeDir": "../dist/fonts",
   "theme": "twx-light",
-  "version": "10.0.0.9485"
+  "version": "10.0.0.9485",
+
+  "thumbnail": "Uploaded/thumb-ex3.jpg"
 }
