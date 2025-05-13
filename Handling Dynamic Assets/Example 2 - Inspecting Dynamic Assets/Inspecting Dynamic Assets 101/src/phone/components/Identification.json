@@ -222,7 +222,7 @@
                                             "twx-widget": "",
                                             "widget-id": "button-1",
                                             "widget-name": "startScanButton",
-                                            "text": "Scan the QR code",
+                                            "text": "Scan Product ID",
                                             "class": "long-button--green"
                                           },
                                           "name": "twx-button",

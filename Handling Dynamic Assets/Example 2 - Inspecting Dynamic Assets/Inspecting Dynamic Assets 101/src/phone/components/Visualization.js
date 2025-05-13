@@ -107,8 +107,9 @@ var highlightReset = (highlightedList) => {
   // run over all the items in the list and unsasign the shader
   //
   highlightedList.forEach( (modelIdpartId) => {
-    
-    tml3dRenderer.setProperties(modelIdpartId,{ shader:"", opacity: 0.2, hidden: !twx.app.isPreview() });
+                          
+    //setting hidden to -1 is a special setting that says "inherit hidden from my parent"
+    tml3dRenderer.setProperties(modelIdpartId,{ shader:"", opacity: 0.2, hidden: -1 });
     
   });
   return [];
