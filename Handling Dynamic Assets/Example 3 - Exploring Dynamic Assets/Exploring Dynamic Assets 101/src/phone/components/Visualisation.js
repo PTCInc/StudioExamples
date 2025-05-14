@@ -223,7 +223,7 @@ $scope.showPropertyValues = () => {
   // build/reuse labels
   // first thing we do is hide any existing labels
   //
-  hideLabels();
+  $scope.reset();
   
   // in this simple example, we'll use the ocurrence paths to maintain a list of valid labels
   //
@@ -292,12 +292,14 @@ $scope.$on("sequenceloaded", (seq) => {
 // called if user clicks the "explode" button
 //
 $scope.explodeModel = () => {
+  hideLabels();
   $scope.view.wdg.dynamicModel.sequence = $scope.exploder[0].filename;
 }
 
 // called if user clicks the "illustrated" button
 //
 $scope.showIllustrated = () => {
+  hideLabels();
   $scope.illustrated.forEach( (id) => {
     var shader = "highlight;r f 1;g f 0.5;b f 0.25;a f 1" + (twx.app.isPreview() ? ";virtualMode f 1.0":"");
     tml3dRenderer.setProperties("dynamicModel-"+id, { shader:shader, hidden:false });
