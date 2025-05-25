@@ -281,6 +281,7 @@
           "attributes": {
             "twx-widget": "",
             "widget-id": "productIdentifiedPopup",
+            "is-visible-at-designtime": "false",
             "widget-name": "productIdentifiedPopup",
             "is-widget-container": "true",
             "class": "full-page-popup",
@@ -681,7 +682,7 @@
                           "attributes": {
                             "filter-id": "df-1746120397648",
                             "filter-name": "a",
-                            "filter-body": "return \"urn:instance:\"+value;"
+                            "filter-body": "return \"urn:product:instance:\"+value;"
                           },
                           "name": "twx-data-filter"
                         }
