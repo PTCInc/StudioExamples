@@ -65,7 +65,7 @@
 @if /I "%result%" EQU "" goto thingfail
 @set thingname=%result%
 @echo created thing %thingname% - mapping to %instanceId%
-@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%thingname%\", \"resourcetype\":\"thing\"}" %server%/ExperienceService/id-resolution/mappings
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%thingname%\", \"resourcetype\":\"thingname\"}" %server%/ExperienceService/id-resolution/mappings
 @rem end of todo
 
 :test 
