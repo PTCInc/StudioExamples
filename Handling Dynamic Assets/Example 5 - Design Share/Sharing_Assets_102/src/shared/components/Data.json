@@ -1,0 +1,173 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "name": "share0",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "share0"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "addNote",
+            "id": "addNote"
+          },
+          "name": "twx-model-service",
+          "children": [
+            {
+              "attributes": {
+                "databind-id": "db-0fcf0fc9-6b3b-4c98-9581-f8622dcbc7c3",
+                "source-type": "ui",
+                "source-label": "Text Input",
+                "source-name": "textInput-1",
+                "source-item-type": "property",
+                "source-item-name": "text",
+                "binding-type": "widget_property",
+                "from-expression": "app.view['Visualization'].wdg['textInput-1']['text']",
+                "to-property": "text"
+              },
+              "name": "twx-databind"
+            }
+          ]
+        },
+        {
+          "attributes": {
+            "name": "getNotes",
+            "id": "getNotes",
+            "twx-no-auto-select": ""
+          },
+          "name": "twx-model-service"
+        },
+        {
+          "attributes": {
+            "databind-id": "db-b2dc8003-3922-4c06-914d-4f02cd8c200a",
+            "source-type": "data",
+            "source-name": "thing",
+            "source-item-type": "value",
+            "source-item-name": "thing",
+            "binding-type": "custom_field",
+            "from-expression": "app.params['thing']",
+            "to-property": "twx-entity-name"
+          },
+          "name": "twx-databind"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-1f3cfc5e-8f3c-4615-a5b5-be567ef780a9",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
+            "source-name": "share0",
+            "source-event": "addNote.serviceInvokeComplete",
+            "handler-type": "data",
+            "handler-name": "share0",
+            "handler-service": "getNotes",
+            "handler-service-name": "getNotes",
+            "handler-path": "app.mdl.share0.svc.getNotes"
+          },
+          "name": "twx-eventbind"
+        },
+        {
+          "attributes": {
+            "eventbind-id": "eb-814b66b1-fba6-473c-87ca-4481cbbd24cd",
+            "source-type": "service",
+            "source-label": "ServiceInvokeComplete",
+            "source-name": "share0",
+            "source-event": "getNotes.serviceInvokeComplete",
+            "handler-type": "ui",
+            "handler-name": "notesPopup",
+            "handler-service": "showpopup",
+            "handler-path": "app.view[\"Visualization\"].wdg[\"notesPopup\"].svc.showpopup"
+          },
+          "name": "twx-eventbind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": "share2"
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "productid",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "productid",
+        "value": "11112358"
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-f69ef71b-2bdd-4c92-b7d6-8c32a6eb4532",
+            "source-type": "ui",
+            "source-label": "Scan",
+            "source-name": "scan-1",
+            "source-item-type": "property",
+            "source-item-name": "scannedValue",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Identification'].wdg['scan-1']['scannedValue']",
+            "to-property": "app.params['productid']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "OneOff",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "OneOff",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-cef686c4-ea52-48db-b24e-169aba7838b3",
+            "source-type": "ui",
+            "source-label": "Checkbox",
+            "source-name": "checkbox-1",
+            "source-item-type": "property",
+            "source-item-name": "value",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Preset'].wdg['checkbox-1']['value']",
+            "to-property": "app.params['OneOff']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}

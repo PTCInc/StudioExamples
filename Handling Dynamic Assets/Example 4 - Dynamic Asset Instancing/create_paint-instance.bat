@@ -31,17 +31,19 @@
 
 @rem we should first check this instance does not already exist
 @if EXIST __p9 @del __p9
-@echo testing instance %instanceId%
+@echo. testing instance %instanceId%
 @curl -u %uname%:%passwd% -H "X-Requested-With: XMLHttpRequest" -k -H Accept:application/json %server%/ExperienceService/id-resolution/resolutions?key=urn:product:instance:%instanceId% --output __p9
 @for /f "tokens=1,2 delims=[]{} " %%a in (__p9) do @set resolutions=%%b
 @if /I "%resolutions%" NEQ "" goto duplicate
 
 @rem we are ok to proceed 
-@rem echo mapping color %color%, product %fullId" to instance %instanceId% 
-@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%color%\", \"resourcetype\":\"color\"}" %server%/ExperienceService/id-resolution/mappings
-@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%fullId%\", \"resourcetype\":\"productid\"}" %server%/ExperienceService/id-resolution/mappings
+@echo. creating instance %instanceId% 
 @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:instance:%instanceId%\", \"value\": \"urn:product:config:%configId%\"}" %server%/ExperienceService/id-resolution/mappings
-@rem also kep a map of all the instances - basically, we can resolve this key and get a list of all the instance ids
+@echo. mapping color %color% to instance %instanceId% 
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%color%\", \"resourcetype\":\"color\"}" %server%/ExperienceService/id-resolution/mappings
+@echo. mapping product %fullId" to instance %instanceId% 
+@curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%fullId%\", \"resourcetype\":\"productid\"}" %server%/ExperienceService/id-resolution/mappings
+@rem also keep a map of all the instances - basically, we can resolve this key and get a list of all the instance ids
 @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:instance\", \"value\": \"productId:%fullId%:instanceId:%instanceId%\", \"resourcetype\":\"instanceid\"}" %server%/ExperienceService/id-resolution/mappings
 
 @rem todo : if we want the thing to always be there, we should move this section to occur before the color/product mapping
@@ -64,12 +66,12 @@
 @for /f "tokens=1,2 delims=,:[{}] " %%a in (__p8) do @set %%~a=%%~b
 @if /I "%result%" EQU "" goto thingfail
 @set thingname=%result%
-@echo created thing %thingname% - mapping to %instanceId%
+@echo. created thing %thingname% - mapping to %instanceId%
 @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%thingname%\", \"resourcetype\":\"thingname\"}" %server%/ExperienceService/id-resolution/mappings
 @rem end of todo
 
 :test 
-@echo testing instance %instanceId%
+@echo. testing instance %instanceId%
 @curl -u %uname%:%passwd% -H "X-Requested-With: XMLHttpRequest" -k -H Accept:application/json %server%/ExperienceService/id-resolution/resolutions?key=urn:product:instance:%instanceId%
 @goto done
 
@@ -92,3 +94,4 @@
 @echo    e.g. create_paint_instance 101.1 red p101
 @set ERRORLEVEL=1
 :done
+@echo. complete

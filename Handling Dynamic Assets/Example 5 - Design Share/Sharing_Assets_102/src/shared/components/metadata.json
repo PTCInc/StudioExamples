@@ -1,0 +1,57 @@
+{
+  "name": "Sharing Assets 101",
+  "version": "1.0.0",
+  "requires": [
+    "w320dp"
+  ],
+  "experiences": [
+    {
+      "vumark": "",
+      "experienceType": "none",
+      "id": 1,
+      "index-keys": [],
+      "title": {
+        "en": "Design Share"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [
+        "AR-tracking"
+      ],
+      "tags": [],
+      "icon": "",
+      "viewName": "Preset",
+      "url-template": "index.html?expId=1",
+      "entryPoint": "index.html?expId=1",
+      "thumbnail": "public/Uploaded/thumb-ex2.jpg",
+      "thingTemplateName": ""
+    },
+    {
+      "vumark": "0:0",
+      "experienceType": "vumark",
+      "index-keys": [
+        "urn:vuforia:vumark:0:0"
+      ],
+      "title": {
+        "en": "Design Share"
+      },
+      "description": {
+        "en": "",
+        "en-US": ""
+      },
+      "requires": [],
+      "tags": [],
+      "icon": "",
+      "viewName": "Preset",
+      "url-template": "index.html?expId=2&vumark={{vuforia:vumark}}",
+      "id": 2,
+      "entryPoint": "index.html?expId=2",
+      "thumbnail": "public/Uploaded/thumb-ex2.jpg"
+    }
+  ],
+  "accessType": "public",
+  "widgetsUsage": [],
+  "designedfor": []
+}
