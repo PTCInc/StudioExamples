@@ -1,3 +1,4 @@
+*.twx filter=lfs diff=lfs merge=lfs -text
 *.zip* filter=lfs diff=lfs merge=lfs -text
 *.pvz* filter=lfs diff=lfs merge=lfs -text
 *.c3di* filter=lfs diff=lfs merge=lfs -text

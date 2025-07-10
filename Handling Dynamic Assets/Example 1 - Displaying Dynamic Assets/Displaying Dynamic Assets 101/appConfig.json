@@ -1,0 +1,60 @@
+{
+  "name": "Studio Sample - Displaying Dynamic Assets",
+  "projectType": "AR",
+  "viewType": "ar",
+  "fileName": "Studio Sample - Displaying Dynamic Assets",
+  "thingworxServer": "",
+  "viewTemplateFileName": "home-ar.json",
+  "state": {
+    "orientation": "landscape"
+  },
+  "targets": {
+    "phone": {
+      "components": [
+        {
+          "name": "Identification",
+          "fileName": "Identification",
+          "showInMainMenu": true,
+          "viewType": "mobile-2D",
+          "title": "Identification"
+        },
+        {
+          "name": "Visualization",
+          "fileName": "Visualization",
+          "showInMainMenu": true,
+          "viewType": "ar",
+          "title": "Visualization"
+        }
+      ],
+      "images": []
+    },
+    "shared": {
+      "components": [
+        {
+          "name": "Data",
+          "fileName": "Data"
+        }
+      ],
+      "images": [],
+      "styles": [
+        {
+          "name": "App",
+          "fileName": "App",
+          "fileExt": "scss"
+        }
+      ]
+    }
+  },
+  "device": {
+    "name": "ipad",
+    "width": "1024",
+    "height": "768"
+  },
+  "mainNavigationMenuStyle": "noMenu",
+  "resourceDirectory": "src/phone/resources",
+  "resourceRuntimeDir": "app/resources",
+  "fontRuntimeDir": "../fonts",
+  "fontDesigntimeDir": "../dist/fonts",
+  "theme": "twx-light",
+  "version": "10.0.0.9485"
+}

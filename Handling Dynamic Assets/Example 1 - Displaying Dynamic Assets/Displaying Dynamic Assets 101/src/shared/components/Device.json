@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "namespace": "device.mdl"
+    },
+    "children": [{
+        "attributes": {
+            "name": "CurrentDevice"
+        },
+        "name": "twx-device-model",
+        "children": [{
+            "attributes": {
+                "name": "getCameraPictureURL"
+            },
+            "name": "twx-device-service"
+        }]
+    }],
+    "name": "twx-device-mdl"
+}

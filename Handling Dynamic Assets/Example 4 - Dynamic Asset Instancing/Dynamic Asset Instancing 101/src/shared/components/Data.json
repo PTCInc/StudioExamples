@@ -1,0 +1,136 @@
+{
+  "attributes": {
+    "namespace": "app.mdl"
+  },
+  "children": [
+    {
+      "attributes": {
+        "id": "vumark",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "ThingMark",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "template",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing Template",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "thing",
+        "isbound": "false",
+        "isdeletable": "false",
+        "name": "Thing",
+        "value": ""
+      },
+      "name": "twx-app-param"
+    },
+    {
+      "attributes": {
+        "id": "productid",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "productid",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-0ee96f16-727b-4d28-a84e-004a8abbc836",
+            "source-type": "ui",
+            "source-label": "ID Resolution",
+            "source-name": "idResolution-1",
+            "source-item-type": "property",
+            "source-item-name": "result",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Identification'].wdg['idResolution-1']['result']",
+            "to-property": "app.params['productid']"
+          },
+          "name": "twx-databind",
+          "children": [
+            {
+              "attributes": {
+                "filter-id": "df-1746120278753",
+                "filter-name": "a",
+                "filter-body": "return value.productid[0].value;"
+              },
+              "name": "twx-data-filter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "color",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "color",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-277b47ef-1ae4-40de-974a-26826502cc46",
+            "source-type": "ui",
+            "source-label": "ID Resolution",
+            "source-name": "idResolution-1",
+            "source-item-type": "property",
+            "source-item-name": "result",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Identification'].wdg['idResolution-1']['result']",
+            "to-property": "app.params['color']"
+          },
+          "name": "twx-databind",
+          "children": [
+            {
+              "attributes": {
+                "filter-id": "df-1746094240824",
+                "filter-name": "a",
+                "filter-body": "return value.color[0].value;"
+              },
+              "name": "twx-data-filter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "attributes": {
+        "id": "instanceId",
+        "isbound": "false",
+        "isdeletable": "true",
+        "name": "instanceId",
+        "value": ""
+      },
+      "name": "twx-app-param",
+      "children": [
+        {
+          "attributes": {
+            "databind-id": "db-39bf69a4-67ff-4122-ae35-c9fbaa407440",
+            "source-type": "ui",
+            "source-label": "Scan",
+            "source-name": "scan-1",
+            "source-item-type": "property",
+            "source-item-name": "scannedValue",
+            "binding-type": "widget_property",
+            "from-expression": "app.view['Identification'].wdg['scan-1']['scannedValue']",
+            "to-property": "app.params['instanceId']"
+          },
+          "name": "twx-databind"
+        }
+      ]
+    }
+  ],
+  "name": "twx-app-mdl"
+}
