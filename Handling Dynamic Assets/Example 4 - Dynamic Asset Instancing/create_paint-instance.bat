@@ -70,6 +70,10 @@
 @curl -u %uname%:%passwd% -H "Content-Type: application/json" -H "X-Requested-With: XMLHttpRequest" -k -d "{\"key\": \"urn:product:config:%configId%\", \"value\": \"%thingname%\", \"resourcetype\":\"thingname\"}" %server%/ExperienceService/id-resolution/mappings
 @rem end of todo
 
+:generate instance code (datamatrix) that we can scan using View
+@curl -k "https://quickchart.io/barcode?type=datamatrix&text=%instanceId%" --output dm-%instanceID%.jpg
+@echo. Scannable code written to dm-%instanceId%.jpg.  
+
 :test 
 @echo. testing instance %instanceId%
 @curl -u %uname%:%passwd% -H "X-Requested-With: XMLHttpRequest" -k -H Accept:application/json %server%/ExperienceService/id-resolution/resolutions?key=urn:product:instance:%instanceId%

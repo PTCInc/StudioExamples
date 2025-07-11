@@ -51,11 +51,13 @@ might employ.  You can edit the values using Thingworx composer, and if you
 feel like having some real fun, connect the instances up to a raspberry pi or
 some other edge device that can provide ral values into the drone thing.
 
+A barcode (datamatrix) is generated - this encodes the given instance ID e..g
+in the examples above, you will see dm-101.jpg created - this maps to instance
+id 101.
+
 # Viewing the instance
-The experience provided willfirst scan a bar code that represents the instance
-id - in the examples above we used 101, 102 etc. so you can create a barcode
-using  online  tool that can  represent  these  values. You can also use other
-values for the IDs.
+The experience provided will scan a bar code (see above) that represents the instance
+id - in the examples above we used 101, 102 etc.
 
 Scan the instance code and the experience will find the product that is linked
 to this,  load  that  product,  and then will  apply the given  'color' to the
