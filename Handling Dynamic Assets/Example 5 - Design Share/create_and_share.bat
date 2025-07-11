@@ -38,7 +38,7 @@
 
 @rem ... for designshare, we dont need the target ...
 @rem ... but we do need to create the sharable link (thingmark or qr code)
-@call share_product %1 %4
+@call share_product %1
 @if %ERRORLEVEL 1 goto abort
 @for /f "tokens=1,2 delims=,:{} " %%a in (__p3) do @set %%~a=%%~b
 @if /I "%shareId%" EQU "" goto error1
