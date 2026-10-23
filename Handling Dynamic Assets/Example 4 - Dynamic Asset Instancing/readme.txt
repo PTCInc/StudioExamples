@@ -51,7 +51,7 @@ might employ.  You can edit the values using Thingworx composer, and if you
 feel like having some real fun, connect the instances up to a raspberry pi or
 some other edge device that can provide ral values into the drone thing.
 
-A barcode (datamatrix) is generated - this encodes the given instance ID e..g
+A barcode (datamatrix) is generated - this encodes the given instance ID e.g.
 in the examples above, you will see dm-101.jpg created - this maps to instance
 id 101.
 

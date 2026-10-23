@@ -5,7 +5,7 @@
 // triggered when user clicks on object in the scene
 $scope.$on('userpick', function (event, targetName, targetType, eventData) {
   
-  // there are other 3d elements in the scene e..g buttons, so we need to ignore them
+  // there are other 3d elements in the scene e.g. buttons, so we need to ignore them
   if (targetName != 'quadcopter') return;
   
   //
